@@ -62,6 +62,7 @@ a.btn {
     height: 14px;
     font-size: 0;
     line-height: 0;
+    background: none;
 }
 
 .main_btn::before,
@@ -135,6 +136,22 @@ a.btn {
     margin: 0 5px;
     line-height: inherit;
     color: rgb(0, 204, 195);
+}
+
+.lottie-anim {
+    display: inline-block;
+}
+
+.lottie-anim {
+    /* width: 1em; */
+    height: 1em;
+    overflow: hidden;
+    margin-bottom: -5px;
+}
+
+.lottie-anim__1 {
+    width: 2em;
+    height: 1.2em;
 }
 
 @media only screen and (max-width: 479px) {
