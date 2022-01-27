@@ -192,14 +192,6 @@ a.btn {
     color: #fe505d;
 }
 
-.ic_1 {
-    display: inline-block;
-    width: 15px;
-    margin: 0 5px;
-    line-height: inherit;
-    color: rgb(0, 204, 195);
-}
-
 .lottie-anim {
     display: inline-block;
 }
@@ -301,6 +293,7 @@ a.btn {
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
+    overflow: hidden;
 }
 
 .quiz_btn:hover {
@@ -311,6 +304,8 @@ a.btn {
 /* Footer section */
 
 .main_footer {
+    padding-top: 130px;
+    padding-bottom: 20px;
     color: #fff;
     background-color: #002B9A;
 }
@@ -327,7 +322,7 @@ a.btn {
 }
 
 .footer_nav {
-    padding: 10px 0;
+    padding: 0;
 }
 
 .footer_nav ul {
@@ -337,22 +332,49 @@ a.btn {
 }
 
 .footer_nav li {
-    margin-bottom: 10px;
+    margin-top: 2px;
 }
 
 .footer_nav li a,
 .btn_back {
-    padding: 10px 0;
+    display: inline-block;
+    padding: 5px 0;
     font-size: 22px;
 }
 
 .footer_nav .sec {
-    margin-top: 100px;
+    margin-top: 95px;
 }
 
+.footer_nav .linkedin {
+    width: 26px;
+    height: 26px;
+}
+
+.footer_nav .linkedin a {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer_nav .linkedin img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
 .btn_back {
+    padding-right: 30px;
+    margin-top: 30px;
     background: none;
     color: #fff;
+    background-image: url("../img/top.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 22px auto;
+
 }
 
 
@@ -391,8 +413,8 @@ a.btn {
     }
 
     .rounded-section {
-        border-bottom-left-radius: 100px;
-        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 85px;
+        border-bottom-right-radius: 85px;
     }
 
 }
@@ -441,6 +463,10 @@ a.btn {
     background-size: 100% 100%;
 }
 
+.mc_plus__blue {
+    background-image: url("../img/plus_blue.png");
+}
+
 .mc_desc {
     display: none;
 }
@@ -459,10 +485,6 @@ a.btn {
     color: #002B9A;
     background-color: #F4EE6B;
     border-radius: 30px;
-}
-
-.mob_click__2 .mc_plus {
-    filter: brightness(0.4);
 }
 
 .mob_click__3 {
