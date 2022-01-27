@@ -11,6 +11,11 @@ body, html {
     padding: 0;
 }
 
+.no-scroll {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .visually_hidden {
     position: absolute;
     visibility: hidden;
@@ -63,6 +68,7 @@ a.btn {
     font-size: 0;
     line-height: 0;
     background: none;
+    z-index: 101;
 }
 
 .main_btn::before,
@@ -74,6 +80,7 @@ a.btn {
     height: 2px;
     left: 0;
     background-color: #002b99;
+    transition: 0.3s;
 }
 
 .main_btn::before {
@@ -87,7 +94,62 @@ a.btn {
 /* Navigation block */
 
 .main_nav {
-    display: none;
+    padding: 120px 10px 15px 25px;
+    margin-left: auto;
+    height: 100%;
+    max-width: 768px;
+    background-color: #fe505d;
+    box-sizing: border-box;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    user-select: none;
+}
+
+.main_nav_block {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    min-height: 300px;
+    top: 0;
+    right: -100%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.nb1__open .main_nav_block {
+    right: 0;
+}
+
+.nb1__open .main_btn::before,
+.nb1__open .main_btn::after {
+    background-color: #fff;
+}
+
+.nb1__open .main_btn::before {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.nb1__open .main_btn::after {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.main_nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main_nav a {
+    display: inline-block;
+    padding: 4px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main_nav ul:nth-child(2) {
+    margin-top: 40px;
 }
 
 /* First header section */
@@ -191,7 +253,6 @@ a.btn {
 
 
 
-
 @media only screen and (max-width: 479px) {
     .content_wrapper {
         padding-left: 19.5px;
@@ -200,6 +261,10 @@ a.btn {
 
     .sect1_btn {
         margin: 15px 15px 0 0;
+    }
+
+    .main_nav {
+        font-size: 22px;
     }
 
 }

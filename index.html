@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <script src="main-script.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
@@ -18,22 +19,23 @@
             <div class="site_logo">
                 <img src="img/logo.png" alt="Logo">
             </div>
-            <button class="main_btn btn" id="main_nav">Navigation</button>
+            <button class="main_btn btn" id="main_nav" onclick="toggleClass('main_header', 'nb1__open', true)">Navigation</button>
         </div>
-
-        <nav class="main_nav">
-            <ul>
-                <li><a href="#">Explore our brands</a></li>
-                <li><a href="#">Work with us</a></li>
-                <li><a href="#">GeniusWire™</a></li>
-                <li><a href="#">Sell your business</a></li>
-                <li><a href="#">Meet our team</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="mailto:info@nolk.com">info@nolk.com</a></li>
-            </ul>
-        </nav>
+        <div class="main_nav_block">
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="#">Explore our brands</a></li>
+                    <li><a href="#">Work with us</a></li>
+                    <li><a href="#">GeniusWire™</a></li>
+                    <li><a href="#">Sell your business</a></li>
+                    <li><a href="#">Meet our team</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="mailto:info@nolk.com">info@nolk.com</a></li>
+                </ul>
+            </nav>
+        </div>
         <section class="head_sect1">
             <h1 class="visually_hidden">Nolk, modern brand stewards for the digital generation.</h1>
             <div>
