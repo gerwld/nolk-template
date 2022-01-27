@@ -96,7 +96,8 @@ a.btn {
 }
 
 .head_sect1 {
-    margin: 80px 0 15px;
+    padding: 80px 0 0;
+    margin-bottom: 60px;
 }
 
 .head_sect1 .header_text {
@@ -150,8 +151,22 @@ a.btn {
 }
 
 .lottie-anim__1 {
-    width: 2em;
-    height: 1.2em;
+    width: 1.5em;
+    height: 1.1em;
+}
+
+.main_sect1 {
+    overflow: hidden;
+}
+
+.nlkblocks_click {
+    width: 50%;
+    text-transform: lowercase;
+}
+
+.nlkblocks_click__1 {
+    color: #fff;
+    background-color: #FF505D;
 }
 
 @media only screen and (max-width: 479px) {
@@ -163,4 +178,5 @@ a.btn {
     .sect1_btn {
         margin: 15px 15px 0 0;
     }
+
 }
