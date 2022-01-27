@@ -277,6 +277,7 @@ a.btn {
 
 .main_name,
 .main_footer {
+    position: relative;
     padding-top: 110px;
 }
 
@@ -307,10 +308,51 @@ a.btn {
     color: #fe505d;
 }
 
-
+/* Footer section */
 
 .main_footer {
-    
+    color: #fff;
+    background-color: #002B9A;
+}
+
+.main_footer .site_logo {
+    margin-bottom: 20px;
+    filter: brightness(100);
+}
+
+.main_footer a {
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.footer_nav {
+    padding: 10px 0;
+}
+
+.footer_nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer_nav li {
+    margin-bottom: 10px;
+}
+
+.footer_nav li a,
+.btn_back {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.footer_nav .sec {
+    margin-top: 100px;
+}
+
+.btn_back {
+    background: none;
+    color: #fff;
 }
 
 
