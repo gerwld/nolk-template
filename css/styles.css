@@ -108,7 +108,7 @@ a.btn {
 .main_nav_block {
     position: fixed;
     z-index: 100;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     min-height: 300px;
     top: 0;
@@ -166,7 +166,6 @@ a.btn {
     font-size: 9vw;
     font-weight: 400;
     line-height: 1.1em;
-    letter-spacing: -0.003em;
 }
 
 .more_buttons {
@@ -174,7 +173,7 @@ a.btn {
 }
 
 .sect1_btn {
-    padding: 0.5em 1.5em;
+    padding: 0.5em 1.25em;
     margin-right: 30px;
     background-color: #002b99;
     border-radius: 50px;
@@ -215,9 +214,11 @@ a.btn {
     height: 1.1em;
 }
 
-.nblocks_mobile {
-    padding-top: 30px;
-    padding-bottom: 20px;
+/* Section 2 */
+
+.mob_blocks {
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
 
 .sect2_textblock {
@@ -230,6 +231,86 @@ a.btn {
 
 .sect2_text {
     padding: 80px 0 50px;
+}
+
+.rounded-section {
+    min-height: 120px;
+    padding-bottom: 90px;
+    margin-bottom: -100px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border: 1px solid transparent;
+    background-color: #f4f3f3;
+
+}
+
+.main_sect2 {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* Quiz section */
+
+.mainname_text {
+    font-size: 9vw;
+}
+
+.mainname_quiz textarea {
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 10vw;
+    font-family: inherit;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+.mainname_quiz textarea:focus {
+    outline: none;
+}
+
+.mainname_quiz textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.main_name,
+.main_footer {
+    padding-top: 110px;
+}
+
+.main_name {
+    z-index: 1;
+    padding-top: 140px;
+    padding-bottom: 120px;
+    background-color: #fe505d;
+    color: #f4f3f3;
+}
+
+.quiz_buttons {
+    margin-top: 23px;
+}
+
+.quiz_btn {
+    margin: 0 16px 0 0;
+    padding: 0.3em 1.20em;
+    font-size: 16px;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.quiz_btn:hover {
+    background-color: #fff;
+    color: #fe505d;
+}
+
+
+
+.main_footer {
+    
 }
 
 
@@ -267,38 +348,50 @@ a.btn {
         font-size: 22px;
     }
 
+    .rounded-section {
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
-   /* Section 2 blocks */
+/* Header section */
+.more_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+/* Section 2 blocks */
 
 .mob_block {
     display: flex;
     height: 44vw;
 }
 
-.mob_click_title {
+.mc_title {
     max-width: 75px;
 }
 
 .mob_click {
     display: inline-block;
     width: 49%;
-    height: 100%;
+    height: 44vw;
     padding: 14px;
     text-transform: lowercase;
     box-sizing: border-box;
-    min-height: 44vw;
 }
 
-.mob_click h2 {
+.mob_click .mc_title {
     margin: 0 0 20px 0;
     padding: 0;
     font-size: 7vw;
     font-weight: 400;
 }
 
-.mob_click_plus {
+.mc_plus {
     width: 25px;
     height: 25px;
     background-color: transparent;
@@ -306,7 +399,7 @@ a.btn {
     background-size: 100% 100%;
 }
 
-.mob_click_desc {
+.mc_desc {
     display: none;
 }
 
@@ -316,7 +409,7 @@ a.btn {
     border-bottom-right-radius: 40%;
 }
 
-.mob_click__1 h2 {
+.mob_click__1 .mc_title {
     width: 50px;
 }
 
@@ -326,7 +419,7 @@ a.btn {
     border-radius: 30px;
 }
 
-.mob_click__2 .mob_click_plus {
+.mob_click__2 .mc_plus {
     filter: brightness(0.4);
 }
 
@@ -338,8 +431,8 @@ a.btn {
     text-align: right;
 }
 
-.mob_click__3 h2,
-.mob_click__3 .mob_click_plus {
+.mob_click__3 .mc_title,
+.mob_click__3 .mc_plus {
     margin-left: auto;
 }
 
@@ -383,7 +476,7 @@ a.btn {
     width: 100%;
 }
 
-.main_sect1_group2 {
+.mob_blocks_group2 {
     display: flex;
 }
 

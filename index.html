@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
     <script src="main-script.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="lib/lottie-player.js"></script>
 </head>
 
 <body>
@@ -65,23 +65,23 @@
 
     <main class="main_content">
 
-        <section class="nblocks_mobile content_wrapper">
-            <div class="main_sect1_group1">
-                <div class="mob_block mob_block__hor mob_block__hor_1">
+        <section class="mob_blocks content_wrapper">
+            <div class="mob_blocks_group1">
+                <div class="mob_block mob_block__hor">
                     <div class="mob_click mob_click__1">
-                        <h2 class="mob_click_title">Nolk believes</h2>
-                        <p class="mob_click_desc">That companies that do good, do better in the long run. Our brand family consists of forward-thinking, beautifully designed products that meet the needs and expectations of today’s consumers.</p>
-                        <div class="mob_click_plus"></div>
+                        <h2 class="mc_title">Nolk believes</h2>
+                        <p class="mc_desc">That companies that do good, do better in the long run. Our brand family consists of forward-thinking, beautifully designed products that meet the needs and expectations of today’s consumers.</p>
+                        <div class="mc_plus"></div>
                     </div>
                     <div class="mob_img mob_img__1">
                         <img src="img/im3.jpeg" alt="Nolk image">
                     </div>
                 </div>
-                <div class="mob_block mob_block__hor mob_block__hor_2">
+                <div class="mob_block mob_block__hor">
                     <div class="mob_click mob_click__2">
-                        <h2 class="mob_click_title">Nolk remembers</h2>
-                        <p class="mob_click_desc">What it’s like to start small, grow fast and then hit a wall. The founders of nolk have been there, having started and sold companies with exits totalling over $500M.</p>
-                        <div class="mob_click_plus"></div>
+                        <h2 class="mc_title">Nolk remembers</h2>
+                        <p class="mc_desc">What it’s like to start small, grow fast and then hit a wall. The founders of nolk have been there, having started and sold companies with exits totalling over $500M.</p>
+                        <div class="mc_plus"></div>
                     </div>
                     <div class="mob_img mob_img__2">
                         <img src="img/im4.jpeg" alt="Nolk image">
@@ -89,16 +89,16 @@
                 </div>
             </div>
 
-            <div class="main_sect1_group2">
+            <div class="mob_blocks_group2">
                 <div class="mob_img mob_img__4"><img src="img/im2.jpeg" alt="Nolk image"></div>
                 <div class="mob_block mob_block__ver">
                     <div class="mob_img mob_img__3">
                         <img src="img/im1.jpeg" alt="Nolk image">
                     </div>
                     <div class="mob_click mob_click__3">
-                        <h2 class="mob_click_title">Nolk cares</h2>
-                        <p class="mob_click_desc">What it’s like to start small, grow fast and then hit a wall. The founders of nolk have been there, having started and sold companies with exits totalling over $500M.</p>
-                        <div class="mob_click_plus"></div>
+                        <h2 class="mc_title">Nolk cares</h2>
+                        <p class="mc_desc">What it’s like to start small, grow fast and then hit a wall. The founders of nolk have been there, having started and sold companies with exits totalling over $500M.</p>
+                        <div class="mc_plus"></div>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
 
 
 
-        <section class="main_sect2">
+        <section class="main_sect2 rounded-section">
             <div class="sect2_text content_wrapper">
                 <div class="sect2_textblock"><span class="ht__1">nolk</span> has
                     <div class="lottie-anim"><lottie-player src="img/svg_json/5.json" background="transparent" speed="1" loop autoplay></lottie-player></div>  
@@ -119,32 +119,44 @@
                 tools</div>
                 <div class="sect2_textblock">that give us an edge in realizing your brand’s potential.</div>
             </div>
-            <div class="sect2_brands"></div>
+            <div class="sect2_brands">brand brand brand</div>
         </section>
-        <section class="main_name">
-            <div class="mainname_text"></div>
-            <div class="mainname_quiz"></div>
+        <section class="main_name rounded-section">
+            <div class="content_wrapper">
+                <div class="mainname_text">
+                    <div class="lottie-anim"><lottie-player src="img/svg_json/7.json" background="transparent" speed="1" loop autoplay></lottie-player></div>
+                    Hi ! What is your name?</div>
+                <div class="mainname_quiz">
+                    <textarea name="quiz1" id="quiz1" cols="30" rows="1" placeholder="My name is..."></textarea>
+                    <div class="quiz_buttons">
+                        <button class="quiz_btn btn">Prev</button>
+                        <button class="quiz_btn quiz_btn__1 btn">Next</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <!-- <footer class="main_footer">
-        <div class="site_logo">
-            <img src="img/logo.png" alt="Logo">
+    <footer class="main_footer">
+        <div class="content_wrapper">
+            <div class="site_logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="#">Explore our brands</a></li>
+                    <li><a href="#">Work with us</a></li>
+                    <li><a href="#">GeniusWire™</a></li>
+                    <li><a href="#">Sell your business</a></li>
+                    <li><a href="#">Meet our team</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="mailto:info@nolk.com">info@nolk.com</a></li>
+                </ul>
+            </nav>
+            <button class="btn_back btn">Back to top</button>
         </div>
-        <nav class="footer_nav">
-            <ul>
-                <li><a href="#">Explore our brands</a></li>
-                <li><a href="#">Work with us</a></li>
-                <li><a href="#">GeniusWire™</a></li>
-                <li><a href="#">Sell your business</a></li>
-                <li><a href="#">Meet our team</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="mailto:info@nolk.com">info@nolk.com</a></li>
-            </ul>
-        </nav>
-        <button class="btn_back btn">Back to top</button>
-    </footer> -->
+    </footer>
 </body>
 
 </html>
