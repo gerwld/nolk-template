@@ -1,0 +1,149 @@
+body {
+    background-color: #f4f3f3;
+    font-family: Neuemontreal, sans-serif;
+    color: #000;
+    line-height: 1;
+    font-weight: 400;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.visually_hidden {
+    position: absolute;
+    visibility: hidden;
+    height: 0.1px;
+    width: 0.1px;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+.content_wrapper {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head_sect0 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.site_logo {
+    max-width: 100px;
+    max-height: 80px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.site_logo img {
+    width: 45px;
+}
+
+.main_btn {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 14px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.main_btn::before,
+.main_btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: #002b99;
+}
+
+.main_btn::before {
+    top: 0;
+}
+
+.main_btn::after {
+    bottom: 0;
+}
+
+/* Navigation block */
+
+.main_nav {
+    display: none;
+}
+
+/* First header section */
+.head_sect1 {
+    color: #002b99;
+}
+
+.head_sect1 {
+    margin: 80px 0 15px;
+}
+
+.head_sect1 .header_text {
+    font-size: 28.8px;
+    font-weight: 400;
+    line-height: 1.1em;
+    letter-spacing: -0.003em;
+}
+
+.more_buttons {
+    margin-top: 15px;
+}
+
+.sect1_btn {
+    padding: 0.5em 1.5em;
+    margin-right: 30px;
+    background-color: #002b99;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.sect1_btn__2 {
+    background-color: transparent;
+    border: 1px solid #002b99;
+    color: #002b99;
+}
+
+/* Header text visuals */
+
+.ht__1 {
+    color: #fe505d;
+}
+
+.ic_1 {
+    display: inline-block;
+    width: 15px;
+    margin: 0 5px;
+    line-height: inherit;
+    color: rgb(0, 204, 195);
+}
+
+@media only screen and (max-width: 479px) {
+    .content_wrapper {
+        padding-left: 19.5px;
+        padding-right: 19.5px;
+    }
+
+    .sect1_btn {
+        margin: 15px 15px 0 0;
+    }
+}
