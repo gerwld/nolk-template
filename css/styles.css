@@ -186,7 +186,8 @@ a.btn {
     margin-bottom: 60px;
 }
 
-.header_text {
+.header_text,
+.sect2_textblock {
     display: flex;
     justify-content: flex-start;
     align-items: center;
