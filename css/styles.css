@@ -491,6 +491,7 @@ a.btn {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    user-select: none!important;
 }
 
 .brands_block .brand {
