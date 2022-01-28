@@ -1,9 +1,18 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+  }
+
 body {
     background-color: #f4f3f3;
     font-family: Neuemontreal, sans-serif;
     color: #000;
     line-height: 1;
     font-weight: 400;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 body, html {
@@ -177,6 +186,12 @@ a.btn {
     margin-bottom: 60px;
 }
 
+.header_text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .head_sect1 .header_text {
     font-size: 9vw;
     font-weight: 400;
@@ -209,9 +224,7 @@ a.btn {
 
 .lottie-anim {
     display: inline-block;
-}
-
-.lottie-anim {
+    margin: 0 5px;
     height: 1em;
     overflow: hidden;
     margin-bottom: -5px;
@@ -220,6 +233,7 @@ a.btn {
 .lottie-anim__1 {
     height: 1.1em;
 }
+
 
 /* Section 2 */
 
