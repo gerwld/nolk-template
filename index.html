@@ -156,7 +156,7 @@
         </section>
         <section class="main_name rounded-section">
             <div class="main_name_content content_wrapper">
-                <div class="mainname_text mainname_text_mobile">
+                <div class="mainname_text mainname_text_mobile" id="mainname_text">
                     <div class="jtext_line">
                         <div class="lottie-anim lottie-anim__yell"><lottie-player src="img/svg_json/7.json" background="transparent" speed="1" loop autoplay></lottie-player></div>
                         <div class="quiz_text">Hi ! What is your </div>
@@ -171,8 +171,8 @@
                 <div class="mainname_quiz">
                     <textarea name="quiz1" id="quiz1" cols="30" rows="1" placeholder="My name is..."></textarea>
                     <div class="quiz_buttons">
-                        <button class="quiz_btn btn">Prev</button>
-                        <button class="quiz_btn quiz_btn__1 btn">Next</button>
+                        <button class="quiz_btn btn" id="quiz_btn1" onclick="stepClick(false);" disabled>Prev</button>
+                        <button class="quiz_btn quiz_btn__1 btn" id="quiz_btn2" onclick="stepClick(true);" disabled>Next</button>
                     </div>
                 </div>
             </div>

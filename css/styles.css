@@ -210,6 +210,10 @@ a.btn {
     align-items: center;
 }
 
+.reversed .lottie-anim {
+    order: 2;
+}
+
 .head_sect1 .header_text {
     font-size: 9vw;
     font-weight: 400;
@@ -376,6 +380,16 @@ a.btn {
 .quiz_btn:hover {
     background-color: #fff;
     color: #fe505d;
+}
+
+.quiz_btn:disabled {
+    opacity: 0.6;
+    cursor: none;
+}
+
+.quiz_btn:hover:disabled {
+    color: #fff;
+    background-color: transparent;
 }
 
 /* Footer section */
