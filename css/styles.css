@@ -187,7 +187,8 @@ a.btn {
 }
 
 .header_text,
-.sect2_textblock {
+.sect2_textblock,
+.jtext_line {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -241,6 +242,12 @@ a.btn {
 
 .lottie-anim__2 {
     margin: 0 5px 0 0;
+}
+
+.lottie-anim__yell {
+    flex: 0 0 1.1em;
+    margin: 0 5px 0 0;
+    height: 1em;
 }
 
 /* .lottie-anim {
