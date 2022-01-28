@@ -1,11 +1,15 @@
 
-
-let bodyElem = document.getElementById("bodyElem");
-
-function toggleClass(elem, className, isFixed) {
+window.addEventListener('scroll', null, false);
+function toggleClass(elem, className, isFixed, isMenu) {
     document.querySelector("." + elem).classList.toggle(className);
     if(isFixed) {
-        bodyElem.toggle("no-scroll");
+        document.getElementById("body").classList.toggle("no-scroll");
+    }
+    // menu button position fix
+    if(isMenu) {
+        let btnMenu = document.querySelector(".mainbtn_wrapper")
+        btnMenu.style.top = `${window.scrollY}px`;
+        btnMenu.classList.toggle("closed");
     }
 }
 
@@ -14,6 +18,5 @@ function toggleMob(elem) {
     zindMob++;
     var block = document.querySelector("." + elem);
     block.classList.toggle("mc_open");
-    // block.classList.toggle("index_down");
     block.style = `z-index: ${zindMob};`;
 }

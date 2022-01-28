@@ -66,9 +66,13 @@ a.btn {
 }
 
 .head_sect0 {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.head_sect0_wrapper {
     padding-top: 30px;
 }
 
@@ -92,7 +96,7 @@ a.btn {
     font-size: 0;
     line-height: 0;
     background: none;
-    z-index: 101;
+    z-index: 10005;
 }
 
 .main_btn::before,
@@ -113,6 +117,17 @@ a.btn {
 
 .main_btn::after {
     bottom: 0;
+}
+
+.mainbtn_wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: top 0.3s ease;
+}
+
+.mainbtn_wrapper.closed {
+    top: 0!important;
 }
 
 /* Navigation block */
@@ -139,6 +154,7 @@ a.btn {
     right: -100%;
     overflow: hidden;
     transition: 0.3s;
+    z-index: 10001;
 }
 
 .nb1__open .main_nav_block {
@@ -529,7 +545,7 @@ a.btn {
     min-width: 250px;
     max-height: 0px;
     line-height: 150%;
-    transform: translateY(-10px);
+    transform: translateY(-12px);
     overflow: hidden;
 }
 
