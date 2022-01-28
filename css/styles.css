@@ -51,7 +51,7 @@ a.btn {
 .head_sect0 {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .site_logo {
@@ -227,7 +227,7 @@ a.btn {
 }
 
 .sect2_text {
-    padding: 80px 0 50px;
+    padding: 80px 0 60px;
 }
 
 .rounded-section {
@@ -320,6 +320,10 @@ a.btn {
     filter: brightness(100);
 }
 
+.main_footer .site_logo img {
+    width: 50px;
+}
+
 .main_footer a {
     color: #fff;
     text-decoration: none;
@@ -398,6 +402,16 @@ a.btn {
     height: 100%;
 }
 
+@keyframes brandsAnym {
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
 
 .brands_block {
     width: 100%;
@@ -407,19 +421,17 @@ a.btn {
     height: 50px;
     transform-style: preserve-3d;
     will-change: transform;
-    /* transition: transform 0.1s; */
+    animation: 30s linear 0s infinite normal brandsAnym;
 }
 
 .sect2_brands {
     display: grid;
+    margin-top: 20px;
+    margin-bottom: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-}
 
-/* .brands_block {
-    position: absolute;
-    flex: 0 0 100%;
-} */
+}
 
 .brands_block .brand {
     padding: 0 15px;
@@ -590,6 +602,16 @@ a.btn {
 
 .mob_blocks_group2 {
     display: flex;
+}
+
+.mainname_text_desktop {
+    display: none;
+}
+
+/* Brands */
+
+.brands_block {
+    height: 37px;
 }
 
 }
