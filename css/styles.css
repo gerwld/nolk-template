@@ -233,7 +233,13 @@ a.btn {
 }
 
 .lottie-anim__1 {
-    flex: 0 0 1.5em;
+    flex: 0 0 2em;
+    margin: 0;
+    height: 1.2em;
+}
+
+.lottie-anim__2 {
+    margin: 0 5px 0 0;
 }
 
 /* .lottie-anim {
@@ -251,10 +257,6 @@ a.btn {
     -ms-flex-align: start;
     align-items: flex-start;
   } */
-
-.lottie-anim__1 {
-    height: 1.1em;
-}
 
 
 /* Section 2 */
