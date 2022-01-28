@@ -15,6 +15,10 @@ p {
     line-height: 135%;
 }
 
+lottie-player {
+	display: inline-block;
+  }
+
 .no-scroll {
     height: 100vh;
     overflow: hidden;
@@ -408,6 +412,8 @@ a.btn {
 
 .brands_block img {
     height: 100%;
+    width: auto;
+    object-fit: contain;
 }
 
 @keyframes brandsAnym {
