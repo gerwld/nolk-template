@@ -41,7 +41,6 @@ function stepClick(isNext) {
     //inc/decrement step with basic check & enable button
     if (isNext && formState.step < 2) {
         formState.step++;
-        document.getElementById('quiz_btn1').disabled = false;
     } else if (!isNext && formState.step > 0) {
         formState.step--;
     }
@@ -49,16 +48,18 @@ function stepClick(isNext) {
     //set data from state & disable button if 0
     if(formState.step >= 0 && formState.step <= 2) {
         textarea.value = formState.userData[formState.step];
-        if (formState.userData[formState.step] == null || formState.userData[formState.step].length < 1){
-            button2.disabled = true;
-        } else {
+        if (formState.userData[formState.step] && formState.userData[formState.step].length > 0){
             button2.disabled = false;
+        } else {
+            button2.disabled = true;
         }
     }
 
     //disable if step 0
     if (formState.step === 0) {
         document.getElementById('quiz_btn1').disabled = true;
+    } else {
+        document.getElementById('quiz_btn1').disabled = false;
     }
 
     let isReversed = (formState.step === 1) && "reversed";
