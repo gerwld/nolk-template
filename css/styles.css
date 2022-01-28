@@ -225,14 +225,38 @@ a.btn {
 .lottie-anim {
     display: inline-block;
     margin: 0 5px;
+    flex: 0 0 1em;
+    width: auto;
     height: 1em;
     overflow: hidden;
     margin-bottom: -5px;
 }
 
 .lottie-anim__1 {
-    height: 1.1em;
+    flex: 0 0 2em;
+    margin: 0;
+    height: 1.2em;
 }
+
+.lottie-anim__2 {
+    margin: 0 5px 0 0;
+}
+
+/* .lottie-anim {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  } */
 
 
 /* Section 2 */
