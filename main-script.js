@@ -14,6 +14,6 @@ function toggleMob(elem) {
     zindMob++;
     var block = document.querySelector("." + elem);
     block.classList.toggle("mc_open");
-    block.classList.toggle("index_down");
+    // block.classList.toggle("index_down");
     block.style = `z-index: ${zindMob};`;
 }
