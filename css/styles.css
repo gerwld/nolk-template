@@ -11,6 +11,10 @@ body, html {
     padding: 0;
 }
 
+p {
+    line-height: 135%;
+}
+
 .no-scroll {
     height: 100vh;
     overflow: hidden;
@@ -51,6 +55,7 @@ a.btn {
 .head_sect0 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 30px;
 }
 
@@ -62,7 +67,8 @@ a.btn {
 }
 
 .site_logo img {
-    width: 45px;
+    height: 1.25em;
+    /* width: 55px; */
 }
 
 .main_btn {
@@ -309,7 +315,7 @@ a.btn {
 /* Footer section */
 
 .main_footer {
-    padding-top: 130px;
+    padding-top: 140px;
     padding-bottom: 20px;
     color: #fff;
     background-color: #002B9A;
@@ -320,9 +326,9 @@ a.btn {
     filter: brightness(100);
 }
 
-.main_footer .site_logo img {
+/* .main_footer .site_logo img {
     width: 50px;
-}
+} */
 
 .main_footer a {
     color: #fff;
@@ -398,6 +404,8 @@ a.btn {
     background-size: 22px 22px;
 }
 
+/* Brands */
+
 .brands_block img {
     height: 100%;
 }
@@ -412,7 +420,6 @@ a.btn {
     }
 }
 
-
 .brands_block {
     width: 100%;
     display: flex;
@@ -421,7 +428,10 @@ a.btn {
     height: 50px;
     transform-style: preserve-3d;
     will-change: transform;
-    animation: 30s linear 0s infinite normal brandsAnym;
+    animation: 10s linear 0s infinite normal brandsAnym;
+    -webkit-animation: brandsAnym 10s linear infinite;
+    -moz-animation: brandsAnym 10s linear infinite;
+    -o-animation: brandsAnym 10s linear infinite;
 }
 
 .sect2_brands {
@@ -437,13 +447,79 @@ a.btn {
     padding: 0 15px;
 }
 
+/* Brands end */
+
+/* Mob-click blocks */
+
+.mc_open {
+    z-index: 1000;
+}
+
+.mob_blocks_group1,
+.mob_blocks_group2 {
+    position: relative;
+}
+
+.mc_open .mc_title {
+    max-width: 300px!important;
+    width: auto!important;
+}
+
+.mob_click.mc_open {
+    position: absolute;
+    width: 100%;
+    height: 88vw;
+}
+
+.mc_desc {
+    width: 80%;
+    transform: translateY(-10px);
+}
+
+.mc_open .mc_desc {
+    display: block;
+    transform: translateY(0px);
+}
+
+.index_down {
+    z-index: 1000!important;
+}
+
+.mob_click_content {
+    position: relative;
+    height: 100%;
+}
+
+.mob_click__1.mc_open {
+    border-bottom-right-radius: 4em;
+    border-top-right-radius: 4em;
+}
+
+.mob_click__2.mc_open {
+    border-radius: 0;
+    border-bottom-right-radius: 4em;
+}
+
+.mob_click__3.mc_open {
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 4em;
+    border-bottom-left-radius: 4em;
+}
+
+.mob_click__3 .mc_desc {
+    margin-left: auto;
+}
+
+.mob_img__1,
+.mob_img__2 {
+    margin-left: auto;
+}
 
 
 
 
-
-
-
+/* Mob-click blocks end */
 
 
 
@@ -501,7 +577,7 @@ a.btn {
 
 .mob_click {
     display: inline-block;
-    width: 49%;
+    width: 50%;
     height: 44vw;
     padding: 14px;
     text-transform: lowercase;
@@ -516,6 +592,9 @@ a.btn {
 }
 
 .mc_plus {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
     width: 25px;
     height: 25px;
     background-color: transparent;
@@ -534,7 +613,7 @@ a.btn {
 .mob_click__1 {
     color: #fff;
     background-color: #FF505D;
-    border-bottom-right-radius: 40%;
+    border-bottom-right-radius: 4em;
 }
 
 .mob_click__1 .mc_title {
@@ -558,6 +637,7 @@ a.btn {
 .mob_click__3 .mc_title,
 .mob_click__3 .mc_plus {
     margin-left: auto;
+    right: 0;
 }
 
 .mob_img__2 {
@@ -578,7 +658,7 @@ a.btn {
 
 .mob_img {
     display: inline-block;
-    width: 49.4%;
+    width: 50%;
     overflow: hidden;
     min-height: 44vw;
 }
