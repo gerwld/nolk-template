@@ -118,7 +118,7 @@ function stepClick(isNext) {
     //Send & show info
     if (isNext && formState.isSending) {
         console.log('try to send');
-        if (0) {
+        if (!"Api responce 200-299") {
             fullSection.innerHTML = `
             <div class="mainname_text">
                 <div class="jtext_line">
