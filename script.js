@@ -117,13 +117,12 @@ function stepClick(isNext) {
 
     //Send & show info
     if (isNext && formState.isSending) {
-
-    
     fullSection.innerHTML = `
         <div class="mainname_text error__quiz">
-            <div>Loading...</div>
+            <div>Sending...</div>
         </div>
     `;
+
     console.log('try to send');
 
     //imitation of request, change to async
