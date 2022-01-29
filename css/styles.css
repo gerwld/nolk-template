@@ -495,8 +495,8 @@ a.btn {
 /* Brands */
 
 .brands_block img {
-    height: 100%;
-    width: auto;
+    width: 95px;
+    height: auto;
     object-fit: contain;
 }
 
