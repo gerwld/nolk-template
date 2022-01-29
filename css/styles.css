@@ -5,6 +5,7 @@
   }
 
 body {
+    min-width: 280px;
     background-color: #f4f3f3;
     font-family: Neuemontreal, sans-serif;
     color: #000;
@@ -65,9 +66,8 @@ a.btn {
 }
 
 .content_wrapper {
-    max-width: 980px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 6vw;
+    padding-right: 6vw;
 }
 
 .head_sect0 {
@@ -138,6 +138,7 @@ a.btn {
 /* Navigation block */
 
 .main_nav {
+    font-size: 22px;
     padding: 120px 10px 15px 25px;
     margin-left: auto;
     height: 100%;
@@ -226,12 +227,12 @@ a.btn {
 }
 
 .more_buttons {
-    margin-top: 15px;
+    margin-top: 2em;
 }
 
 .sect1_btn {
     padding: 0.5em 1.25em;
-    margin-right: 20px;
+    margin: 15px 15px 0 0;
     background-color: #002b99;
     border-radius: 50px;
     color: #fff;
@@ -295,8 +296,8 @@ a.btn {
     min-height: 120px;
     padding-bottom: 90px;
     margin-bottom: -108px;
-    border-bottom-left-radius: 120px;
-    border-bottom-right-radius: 120px;
+    border-bottom-left-radius: 7em;
+    border-bottom-right-radius: 7em;
     border: 1px solid transparent;
     background-color: #f4f3f3;
 
@@ -408,8 +409,8 @@ a.btn {
 /* Footer section */
 
 .main_footer {
-    padding-top: 230px;
-    padding-bottom: 30px;
+    padding-top: 140px;
+    padding-bottom: 20px;
     color: #fff;
     background-color: #002B9A;
 }
@@ -698,7 +699,7 @@ a.btn {
 .mob_click .mc_title {
     margin: 0 0 20px 0;
     padding: 0;
-    font-size: 5vw;
+    font-size: 7vw;
     font-weight: 400;
 }
 
@@ -788,6 +789,20 @@ a.btn {
     width: 100%;
 }
 
+.mc_title {
+    max-width: 3em;
+    max-width: min-content;
+}
+
+.mc_plus {
+    bottom: 10px;
+    left: 0;
+}
+
+.mob_click.mc_open {
+    height: 88vw;
+}
+
 .mob_blocks_group2 {
     display: flex;
 }
@@ -797,15 +812,6 @@ a.btn {
 }
 
 /* Brands */
-
-.rounded-section {
-    border-bottom-left-radius: 7em;
-    border-bottom-right-radius: 7em;
-}
-
-.brands_block img {
-    width: 15vw;
-}
 
 .brands_block .brand {
     margin-right: 2vw;
@@ -834,7 +840,36 @@ a.btn {
 /* Mob-click blocks end */
 
 
-@media only screen and (min-width: 479px) and (max-width: 767px){
+
+
+
+
+
+
+
+
+/* Mobile */
+@media only screen and (max-width: 479px) {
+    .htext_mobile_portrait {
+        display: block;
+    }
+    .htext_mobile_landscape {
+        display: none;
+    }
+
+    .sect2_text__mobile-landscape {
+        display: none;
+    }
+
+    .sect2_text__mobile-portrait {
+        display: block;
+    }
+
+}
+
+
+/* Tablet version (most) */
+@media only screen and (min-width: 480px) and (max-width: 767px){
     .content_wrapper {
         padding-left: 4vw;
         padding-right: 4vw;
@@ -873,11 +908,17 @@ a.btn {
 
 }
 
-@media only screen and (min-width: 479px) {
+/* What is not mobile, tablet & desktop  */
+@media only screen and (min-width: 480px) {
     .main_footer .btn_back {
         position: absolute;
         bottom: 0;
         right: 4vw;
+    }
+
+    .main_footer {
+        padding-top: 230px;
+        padding-bottom: 30px;
     }
 
     .main_btn {
@@ -905,106 +946,8 @@ a.btn {
     }
 }
 
-
-@media only screen and (max-width: 479px) {
-    body {
-        min-width: 280px;
-    }
-    .content_wrapper {
-        padding-left: 6vw;
-        padding-right: 6vw;
-    }
-
-    .htext_mobile_portrait {
-        display: block;
-    }
-
-    .htext_mobile_landscape {
-        display: none;
-    }
-
-    .sect1_btn {
-        margin: 15px 15px 0 0;
-    }
-
-    .main_nav {
-        font-size: 22px;
-    }
-
-    .rounded-section {
-        border-bottom-left-radius: 65px;
-        border-bottom-right-radius: 65px;
-    }
-
-    .mob_click .mc_title {
-        font-size: 7vw;
-    }
-
-    .site_logo {
-        width: 15vw;
-    }
-
-    .more_buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 2em;
-    }
-
-    .head_sect1 .header_text,
-    .sect2_textblock {
-    font-size: 9vw;
-    }
-
-    .mob_click__1 .mc_title {
-        width: 50px;
-    }
-
-    .mc_title {
-        max-width: 3em;
-        max-width: min-content;
-    }
-
-    .mc_plus {
-        bottom: 10px;
-        left: 0;
-    }
-
-    .mob_click.mc_open {
-        height: 88vw;
-    }
-
-    .brands_block img {
-        width: 30vw;
-    }
-    .sect2_text {
-        padding-top: 80px;
-        padding-bottom: 50px;
-    }
-
-    .main_footer .btn_back {
-        position: unset;
-    }
-
-    .quiz_buttons {
-        margin-left: 0;
-    }
-
-    .main_footer {
-        padding-top: 140px;
-        padding-bottom: 20px;
-    }
-
-    .sect2_text__mobile-landscape {
-        display: none;
-    }
-
-    .sect2_text__mobile-portrait {
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 768px){
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
     body {
         min-width: 736px;
     }
