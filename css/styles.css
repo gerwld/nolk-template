@@ -270,22 +270,6 @@ a.btn {
     height: 1em;
 }
 
-/* .lottie-anim {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-  } */
-
 
 /* Section 2 */
 
@@ -329,15 +313,25 @@ a.btn {
     font-size: 9vw;
 }
 
+.mainname_text .jtext_line:nth-child(1) .quiz_text {
+    margin-right: 7px;
+} 
+
 .mainname_quiz textarea {
+    padding: 0;
     margin: 10px 0;
     width: 100%;
     box-sizing: border-box;
-    font-size: 10vw;
+    font-size: 9vw;
     font-family: inherit;
     border: none;
     background: transparent;
     color: #fff;
+    resize: none;
+    white-space: nowrap;
+    overflow-x: scroll;
+    transition: 0.6s;
+    height: 1.5em;
 }
 
 .mainname_quiz textarea:focus {
@@ -390,6 +384,16 @@ a.btn {
 .quiz_btn:hover:disabled {
     color: #fff;
     background-color: transparent;
+}
+
+.mainname_text.error__quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error__quiz .quiz_btn {
+    margin-top: 20px;
 }
 
 /* Footer section */
