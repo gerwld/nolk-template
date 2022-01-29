@@ -8,6 +8,7 @@ body {
     background-color: #f4f3f3;
     font-family: Neuemontreal, sans-serif;
     color: #000;
+    font-size: 1em;
     line-height: 1;
     font-weight: 400;
     -ms-text-size-adjust: 100%;
@@ -81,15 +82,15 @@ a.btn {
 }
 
 .site_logo {
-    max-width: 100px;
-    max-height: 80px;
+    width: 15vw;
+    height: auto;
     object-fit: contain;
     overflow: hidden;
 }
 
 .site_logo img {
-    height: 1.25em;
-    /* width: 55px; */
+    width: 100%;
+    height: auto;
 }
 
 .main_btn {
@@ -97,7 +98,7 @@ a.btn {
     position: relative;
     width: 40px;
     height: 14px;
-    font-size: 0;
+    font-size: 0!important;
     line-height: 0;
     background: none;
     z-index: 10005;
@@ -230,7 +231,7 @@ a.btn {
 
 .sect1_btn {
     padding: 0.5em 1.25em;
-    margin-right: 30px;
+    margin-right: 20px;
     background-color: #002b99;
     border-radius: 50px;
     color: #fff;
@@ -290,14 +291,10 @@ a.btn {
     color: #002b99;
 }
 
-.sect2_text {
-    padding: 80px 0 60px;
-}
-
 .rounded-section {
     min-height: 120px;
     padding-bottom: 90px;
-    margin-bottom: -100px;
+    margin-bottom: -108px;
     border-bottom-left-radius: 120px;
     border-bottom-right-radius: 120px;
     border: 1px solid transparent;
@@ -336,11 +333,19 @@ a.btn {
     overflow-x: scroll;
     transition: 0.6s;
     height: 1.5em;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.mainname_quiz textarea::-webkit-scrollbar {
+    display: none;
 }
 
 .mainname_quiz textarea:focus {
     outline: none;
 }
+
+
 
 .mainname_quiz textarea::placeholder {
     color: rgba(255, 255, 255, 0.3);
@@ -403,7 +408,7 @@ a.btn {
 /* Footer section */
 
 .main_footer {
-    padding-top: 140px;
+    padding-top: 230px;
     padding-bottom: 20px;
     color: #fff;
     background-color: #002B9A;
@@ -413,10 +418,6 @@ a.btn {
     margin-bottom: 20px;
     filter: brightness(100);
 }
-
-/* .main_footer .site_logo img {
-    width: 50px;
-} */
 
 .main_footer a {
     color: #fff;
@@ -495,7 +496,7 @@ a.btn {
 /* Brands */
 
 .brands_block img {
-    width: 95px;
+    width: 30vw;
     height: auto;
     object-fit: contain;
 }
@@ -561,7 +562,7 @@ a.btn {
 .mob_click.mc_open {
     position: absolute;
     width: 100%;
-    height: 88vw;
+    height: 44vw;
 }
 
 .mc_desc {
@@ -682,45 +683,62 @@ a.btn {
 
 
 
+@media only screen and (max-width: 767px) {
 
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 479px) {
-    .content_wrapper {
-        padding-left: 19.5px;
-        padding-right: 19.5px;
-    }
-
-    .sect1_btn {
-        margin: 15px 15px 0 0;
-    }
-
-    .main_nav {
-        font-size: 22px;
-    }
-
-    .rounded-section {
-        border-bottom-left-radius: 85px;
-        border-bottom-right-radius: 85px;
-    }
-
+.content_wrapper {
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
-@media only screen and (max-width: 768px) {
+.htext_mobile_portrait {
+    display: none;
+}
+
+.htext_mobile_landscape {
+    display: block;
+}
+
+.sect2_text__mobile-landscape {
+    display: block;
+}
+
+.sect2_text__mobile-portrait {
+    display: none;
+}
+
+
 /* Header section */
+
+.main_btn {
+    width: 35px;
+}
+
+.htext_mobile {
+    display: none;
+}
+
+.head_sect1 {
+    margin-bottom: 30px;
+}
+
+.site_logo {
+    width: 10vw;
+}
+
+.head_sect1 .header_text,
+.sect2_textblock,
+.mainname_text,
+.mainname_quiz textarea {
+    font-size: 7vw;
+}
+
 .more_buttons {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 15px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4.1vw;
+    font-size: 1.1em;
 }
 
 /* Section 2 blocks */
@@ -728,11 +746,6 @@ a.btn {
 .mob_block {
     display: flex;
     height: 44vw;
-}
-
-.mc_title {
-    max-width: 3em;
-    max-width: min-content;
 }
 
 .mob_click {
@@ -748,20 +761,21 @@ a.btn {
 .mob_click .mc_title {
     margin: 0 0 20px 0;
     padding: 0;
-    font-size: 7vw;
+    font-size: 5vw;
     font-weight: 400;
 }
 
 .mc_plus {
     position: absolute;
-    bottom: 10px;
-    left: 0;
+    bottom: 20px;
+    left: 10px;
     width: 25px;
     height: 25px;
     background-color: transparent;
     background-image: url("../img/plus.png");
     background-size: 100% 100%;
 }
+
 
 .mc_plus__blue {
     background-image: url("../img/plus_blue.png");
@@ -772,10 +786,6 @@ a.btn {
     background-color: #FF505D;
     border-bottom-right-radius: 4em;
     z-index: 10000!important;
-}
-
-.mob_click__1 .mc_title {
-    width: 50px;
 }
 
 .mob_click__2 {
@@ -851,8 +861,141 @@ a.btn {
 
 /* Brands */
 
-.brands_block {
-    height: 37px;
+.rounded-section {
+    border-bottom-left-radius: 7em;
+    border-bottom-right-radius: 7em;
 }
 
+.brands_block img {
+    width: 15vw;
+}
+
+.brands_block .brand {
+    margin-right: 2vw;
+}
+
+.sect2_textblock {
+    line-height: 1.10em;
+}
+
+.sect2_text {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.quiz_buttons {
+    width: 190px;
+    width:fit-content;
+    margin-left: auto;
+}
+
+.main_footer .content_wrapper {
+    position: relative;
+}
+
+.main_footer .btn_back {
+    position: absolute;
+    bottom: 0;
+    right: 4vw;
+}
+
+
+}
+
+
+@media only screen and (max-width: 479px) {
+    body {
+        min-width: 280px;
+    }
+    .content_wrapper {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .htext_mobile_portrait {
+        display: block;
+    }
+
+    .htext_mobile_landscape {
+        display: none;
+    }
+
+    .sect1_btn {
+        margin: 15px 15px 0 0;
+    }
+
+    .main_nav {
+        font-size: 22px;
+    }
+
+    .rounded-section {
+        border-bottom-left-radius: 65px;
+        border-bottom-right-radius: 65px;
+    }
+
+    .mob_click .mc_title {
+        font-size: 7vw;
+    }
+
+    .site_logo {
+        width: 15vw;
+    }
+
+    .more_buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2em;
+    }
+
+    .head_sect1 .header_text,
+    .sect2_textblock {
+    font-size: 9vw;
+    }
+
+    .mob_click__1 .mc_title {
+        width: 50px;
+    }
+
+    .mc_title {
+        max-width: 3em;
+        max-width: min-content;
+    }
+
+    .mc_plus {
+        bottom: 10px;
+        left: 0;
+    }
+
+    .mob_click.mc_open {
+        height: 88vw;
+    }
+
+    .brands_block img {
+        width: 30vw;
+    }
+    .sect2_text {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .main_footer .btn_back {
+        position: unset;
+    }
+
+    .quiz_buttons {
+        margin-left: 0;
+    }
+
+    .main_footer {
+        padding-top: 140px;
+    }
+
+    .sect2_text__mobile-landscape {
+        display: none;
+    }
+
+    .sect2_text__mobile-portrait {
+        display: block;
+    }
 }
