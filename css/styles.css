@@ -534,6 +534,10 @@ a.btn {
 
 .brands_block .brand {
     padding: 0 15px;
+    -ms-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
 }
 
 /* Brands end */
