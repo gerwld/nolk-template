@@ -1,4 +1,4 @@
-window.addEventListener('scroll', null, false);
+window.addEventListener('scroll', null);
 
 
 function toggleClass(elem, className, isFixed, isMenu) {
