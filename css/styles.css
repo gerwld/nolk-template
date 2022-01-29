@@ -1010,11 +1010,67 @@ a.btn {
         line-height: 1em;
     }
 
+    /* Svg typo header animation */
     .header_anim01 .lottie-anim {
-        display: none;
+        visibility: hidden;
+        transition: 1s;
     }
 
     .typed-cursor--blink ~ .lottie-anim {
-        display: block;
+        visibility: visible;
+        animation: headanim1 0.5s ease 1;
+    }
+
+    @keyframes headanim1 {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(-7px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .typed-cursor {
+        margin-left: 0.5vw;
+        border-left: 2px solid #002b99;
+        font-size: 0!important;
+        line-height: inherit;
+    }
+
+    .header_text .link {
+        text-decoration: none;
+        color: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+    }
+
+    .htext_desktop .link {
+        position: relative;
+    }
+
+    .htext_desktop .link::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 0%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #FF505D;
+        animation: lineHeaderType 1s cubic-bezier(0.48, 0.04, 0.17, 1.03) 2500ms 1 forwards;
+    }
+
+    @keyframes lineHeaderType {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
     }
 }
