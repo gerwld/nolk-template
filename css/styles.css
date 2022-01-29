@@ -296,8 +296,8 @@ a.btn {
     min-height: 120px;
     padding-bottom: 90px;
     margin-bottom: -108px;
-    border-bottom-left-radius: 7em;
-    border-bottom-right-radius: 7em;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
     border: 1px solid transparent;
     background-color: #f4f3f3;
 
@@ -849,7 +849,8 @@ a.btn {
     .htext_mobile_portrait {
         display: block;
     }
-    .htext_mobile_landscape {
+    .htext_mobile_landscape,
+    .htext_desktop {
         display: none;
     }
 
@@ -871,7 +872,8 @@ a.btn {
         padding-right: 4vw;
     }
 
-    .htext_mobile_portrait {
+    .htext_mobile_portrait,
+    .htext_desktop {
         display: none;
     }
     
@@ -961,6 +963,11 @@ a.btn {
 
     .brands_block img {
         width: 16vw;
+    }
+
+    .rounded-section {
+        border-bottom-left-radius: 7em;
+        border-bottom-right-radius: 7em;
     }
 
 }
@@ -1062,7 +1069,7 @@ a.btn {
         bottom: 0;
         left: 0;
         background-color: #FF505D;
-        animation: lineHeaderType 1s cubic-bezier(0.48, 0.04, 0.17, 1.03) 2500ms 1 forwards;
+        animation: lineHeaderType 1s cubic-bezier(0.48, 0.04, 0.17, 1.03) 2800ms 1 forwards;
     }
 
     @keyframes lineHeaderType {
