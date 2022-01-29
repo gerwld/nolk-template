@@ -117,8 +117,18 @@ function stepClick(isNext) {
 
     //Send & show info
     if (isNext && formState.isSending) {
-        console.log('try to send');
-        if (0) {
+
+    
+    fullSection.innerHTML = `
+        <div class="mainname_text error__quiz">
+            <div>Loading...</div>
+        </div>
+    `;
+    console.log('try to send');
+
+    //imitation of request, change to async
+    setTimeout(function(){
+        if (!"Api responce 200-299") {
             fullSection.innerHTML = `
             <div class="mainname_text">
                 <div class="jtext_line">
@@ -138,6 +148,8 @@ function stepClick(isNext) {
                 </div>
             `;
         }
+    }, 500);
+
     }
 
 }

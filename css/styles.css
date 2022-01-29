@@ -20,6 +20,10 @@ body, html {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     line-height: 135%;
 }
