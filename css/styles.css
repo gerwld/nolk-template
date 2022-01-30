@@ -909,6 +909,11 @@ a.btn {
         z-index: 10000!important;
     }
 
+    .mob_click .mc_title {
+        width: 100%;
+        min-width: 100%;
+    }
+
 }
 
 /* What is not mobile, tablet & desktop  */
@@ -959,11 +964,6 @@ a.btn {
 
     .footer_nav .sec{
         margin-top: 10vw;
-    }
-
-    .mob_click .mc_title {
-        width: 100%;
-        min-width: 100%;
     }
 
     .brands_block img {
@@ -1146,4 +1146,18 @@ a.btn {
     .mc_open .mc_desc {
         animation-duration: 0.7s;
     }
+
+    .mob_click .mc_title {
+        font-size: 4vw;
+    }
+
+    .mob_click {
+        padding: 2.2vw;
+    }
+
+    .mc_plus {
+        width: 3vw;
+        height: 3vw;
+    }
+
 }
