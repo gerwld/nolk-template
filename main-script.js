@@ -38,7 +38,7 @@ function mobOffsetAnimation() {
             document.querySelector('.mob_click__2').classList.remove('action');
         }, 2500);
 
-    } else if (mobOffset.top >= 370 || mobOffset.top <= -270) {
+    } else if (mobOffset.bottom <= 100 || mobOffset.top >= 280) {
         allMobBlocks.forEach(function (mob) {
             mob.classList.add('action');
         });
