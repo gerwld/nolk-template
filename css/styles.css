@@ -138,16 +138,16 @@ a.btn {
 /* Navigation block */
 
 .main_nav {
-    font-size: 22px;
-    padding: 120px 10px 15px 25px;
-    margin-left: auto;
+    font-size: 7vw;
+    padding: 120px 10px 15px 47px;
     height: 100%;
     max-width: 768px;
-    background-color: #fe505d;
     box-sizing: border-box;
-    border-top-left-radius: 75px;
-    border-bottom-left-radius: 75px;
     user-select: none;
+}
+
+.main_nav li a {
+    margin-bottom: 15px;
 }
 
 .main_nav_block {
@@ -163,18 +163,22 @@ a.btn {
     transition: 0.6s cubic-bezier(0.22, 0.08, 0.24, 1) 0.08s;
     transition-property: opacity, right;
     z-index: 100001;
+    border-radius: 3em 0 0 0;
+    background-color: #fe505d;
 }
 
 .background-nav {
     position: absolute;
     top: 0;
+    bottom: 0;
     right: -100%;
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
     opacity: 0;
     z-index: 100000;
     background-color: rgba(0, 0, 0, 0.6);
     transition: opacity 0.3s cubic-bezier(0.22, 0.08, 0.24, 1) 0.40s, right 0s ease 0.5s;
+    cursor: pointer;
 }
 
 .nb1__open .main_nav_block {
@@ -184,6 +188,7 @@ a.btn {
 
 .nb1__open .background-nav {
     right: 0;
+    left: 0;
     opacity: 1;
 }
 
@@ -215,7 +220,7 @@ a.btn {
 }
 
 .main_nav ul:nth-child(2) {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 /* First header section */
@@ -481,8 +486,8 @@ a.btn {
 }
 
 .linkedin {
-    width: 26px;
-    height: 26px;
+    width: 31px;
+    height: 31px;
 }
 .footer_nav .linkedin a {
    margin: 0;
@@ -977,6 +982,20 @@ a.btn {
         width: 80%;
     }
 
+    .main_nav {
+        font-size: 28px;
+        padding-left: 45px;
+    }
+
+    .main_nav a {
+        margin-bottom: 15px;
+    }
+
+    .main_nav .linkedin {
+        width: 33px;
+        height: 33px;
+    }
+
     .htext_mobile {
         display: none;
     }
@@ -1028,7 +1047,18 @@ a.btn {
         display: inline;
     }
 
+    
+
 }
+
+
+
+/* @media only screen and (min-width: 400px) and (max-width: 479px){
+    .mc_open .mc_plus {
+        bottom: -6px;
+    }
+} */
+
 
 @media only screen and (min-width: 480px) and (max-width: 530px){
     .mc_open .mc_plus {
@@ -1046,6 +1076,12 @@ a.btn {
 @media only screen and (min-width: 768px) {
     body {
         min-width: 768px;
+    }
+
+    .main_nav_block {
+        max-width: 50%;
+        max-width: 50vw;
+        right: -60%;
     }
 
     .content_wrapper {
@@ -1073,6 +1109,23 @@ a.btn {
 
     .head_sect1 .header_text {
         line-height: 1em;
+    }
+
+    .main_nav_block {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 12vw 0 0 12vw;
+    }
+
+    .main_nav {
+        padding: 0;
+        padding-left: 8vw;
+        height: auto;
+    }
+
+    .main_nav ul:nth-child(2) {
+        margin-top: 10vw;
     }
 
     /* Svg typo header animation */
@@ -1430,6 +1483,10 @@ a.btn {
        font-size: 2vw;
    }
 
+   .main_nav {
+       font-size: 32px;
+   }
+
    .footer_nav {
        justify-content: flex-start;
     }
@@ -1540,6 +1597,13 @@ a.btn {
         position: relative;
         text-decoration: none;
         color: inherit;
+    }
+
+    .main_nav_block {
+        width: 45vw;
+        width: 45%;
+        right: -45vw;
+        max-width: 500px;
     }
 
 }

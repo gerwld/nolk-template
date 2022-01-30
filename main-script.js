@@ -14,6 +14,13 @@ function toggleClass(elem, className, isFixed, isMenu) {
     }
 }
 
+function removeClass(elem, className, isFixed) {
+    document.querySelector('.' + elem).classList.remove(className);
+    if(isFixed) {
+        document.getElementById("body").classList.toggle("no-scroll");
+    }
+}
+
 // Toggle mob block + z-index inc
 let zindMob = 1011;
 function toggleMob(elem) {
