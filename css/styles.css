@@ -1095,7 +1095,7 @@ a.btn {
     }
 
     .mob_blocks_group1 {
-        width: 66.6%;
+        width: 66.66%;
         height: 62vw;
     }
 
@@ -1112,14 +1112,14 @@ a.btn {
 
     .mob_blocks .mob_img__4 {
         position: absolute;
-        width: 33.3%;
+        width: 33.33%;
         height: 62vw;
         right: 0;
         top: 31vw;
     }
 
     .mob_click__3 {
-        width: 33.3%;
+        width: 33.33%;
         top: 0;
     }
 
@@ -1129,7 +1129,7 @@ a.btn {
 
     .mob_blocks .mob_img__3 {
         position: absolute;
-        width: 66.6%;
+        width: 66.66%;
         height: 31vw;
         bottom: 0;
         left: 0;
@@ -1156,8 +1156,48 @@ a.btn {
     }
 
     .mc_plus {
-        width: 3vw;
-        height: 3vw;
+        width: 4vw;
+        height: 4vw;
     }
+
+    .mob_img__1:hover {
+        border-radius: 0% 15vw 15vw 0%;
+    }
+
+    .mob_img__3 {
+        height: 44vw;
+        border-top-left-radius: 15vw;
+        border-bottom-right-radius: 15vw;
+    }
+
+    .mob_img__3:hover {
+        border-radius: 0% 15vw 0% 15vw;
+    }
+
+    .mob_click__1 {
+        border-radius: 0% 0% 20vw 0%;
+    }
+
+    /* .mob_click__2 {
+        transition: border-radius 0.4s cubic-bezier(0.38, 0.11, 0.42, 1) 1.2s;
+        
+    }
+
+    .mob_click__3 {
+        transition: border-radius 0.4s cubic-bezier(0.38, 0.11, 0.42, 1) 0.75s;
+    } */
+
+    .mob_click__1.action {
+        border-radius: 0% 20vw 0% 0%;
+    }
+
+    .mob_click__2.action {
+        border-radius: 0% 0% 20vw 0%;
+    }
+
+    .mob_click__3.action {
+        border-radius: 0% 0% 0% 20vw;
+    }
+
 
 }

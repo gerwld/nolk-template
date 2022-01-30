@@ -1,4 +1,4 @@
-window.addEventListener('scroll', null);
+window.addEventListener('scroll', mobOffsetAnimation, false);
 
 
 function toggleClass(elem, className, isFixed, isMenu) {
@@ -22,3 +22,31 @@ function toggleMob(elem) {
     block.classList.toggle("mc_open");
     block.style = `z-index: ${zindMob};`;
 }
+
+// Desktop mob-block animation
+function mobOffsetAnimation() {
+    let mobBlocks = document.querySelector('.mob_blocks_desc');
+    let allMobBlocks = document.querySelectorAll('.mob_click');
+    let mobOffset = mobBlocks.getBoundingClientRect();
+
+    if (mobOffset.top < 370 && mobOffset.top > -270) {
+        document.querySelector('.mob_click__1').classList.remove('action');
+        setTimeout(function () {
+            document.querySelector('.mob_click__3').classList.remove('action');
+        }, 750);
+        setTimeout(function () {
+            document.querySelector('.mob_click__2').classList.remove('action');
+        }, 2500);
+
+    } else if (mobOffset.top >= 370 || mobOffset.top <= -270) {
+        allMobBlocks.forEach(function (mob) {
+            mob.classList.add('action');
+        });
+    }
+
+}
+
+// allMobBlocks.forEach(function (mob) {
+    //     mob.classList.remove('action');
+    //     console.log('true');
+    // });

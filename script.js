@@ -153,11 +153,14 @@ function stepClick(isNext) {
 
 }
 
-
+//Desktop hero typing
 var typedHero = new Typed('.header_anim01_bl', {
     strings: [`Hi, we're <span class="ht__1">nolk,</span>`],
     typeSpeed: 80
   });
+
+
+ 
 
 
 
