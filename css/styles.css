@@ -397,7 +397,7 @@ a.btn {
 
 .quiz_btn:disabled {
     opacity: 0.6;
-    cursor: none;
+    cursor: default;
 }
 
 .quiz_btn:hover:disabled {
@@ -573,8 +573,7 @@ a.btn {
 }
 
 .mob_click__2.mc_open {
-    border-radius: 0;
-    border-bottom-right-radius: 4em;
+    border-radius: 0 0 4em 0!important;
 }
 
 .mob_click__3 {
@@ -583,8 +582,7 @@ a.btn {
 }
 
 .mob_click__3.mc_open {
-    border-top-left-radius: 4em;
-    border-bottom-left-radius: 4em;
+    border-radius: 4em 0 0 4em!important;
 }
 
 .mc_open .mc_plus {
@@ -836,6 +834,10 @@ a.btn {
     position: relative;
 }
 
+.step_0_added {
+    display: none;
+}
+
 
 
 
@@ -855,6 +857,11 @@ a.btn {
 
     .sect2_text__mobile-landscape,
     .sect2_text__desktop {
+        display: none;
+    }
+
+    .step_0_tablet,
+    .step_0_desktop {
         display: none;
     }
 
@@ -914,6 +921,15 @@ a.btn {
     .mob_click .mc_title {
         width: 100%;
         min-width: 100%;
+    }
+
+    .step_0,
+    .step_0_desktop {
+        display: none;
+    }
+
+    .step_0_tablet {
+        display: block;
     }
 
 }
@@ -1056,8 +1072,13 @@ a.btn {
     .typed-cursor {
         margin-left: 0.5vw;
         border-left: 2px solid #002b99;
-        font-size: 0!important;
+        font-size: inherit;
+        color: transparent!important;
         line-height: inherit;
+    }
+
+    .main_name .typed-cursor {
+        border-left: 2px solid #ffffff;
     }
 
     .header_text .link {
@@ -1212,6 +1233,10 @@ a.btn {
         border-radius: 0% 0% 0% 20vw;
     }
 
+    .mc_open .mc_desc {
+        transition-duration: 0.5s;
+    }
+
     /* Section 2 */
 
     .sect2_text__desktop {
@@ -1257,5 +1282,30 @@ a.btn {
     .lottie-anim__2 {
         margin: 0 5px -5px 0;
     }
+
+    /* Quiz */
+
+    .quiz_text {
+        margin-right: 0!important;
+    }
+
+    .main_name {
+        padding-top: 15.5vw;
+    }
+
+    .mainname_text,
+    .mainname_quiz textarea  {
+        font-size: 6vw;
+    }
+
+    .step_0_tablet,
+    .step_0  {
+        display: none;
+    }
+
+    .step_0_desktop {
+        display: block;
+    }
+
 
 }
