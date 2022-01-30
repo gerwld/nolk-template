@@ -3,12 +3,13 @@
 // var brands2 = document.getElementById("brands_block2");
 
 // let pos = 0;
-// let brandsLoop = setInterval(function(){
-//     pos += 0.011;
-//     if(pos >= 100) pos = 0;
-//     brands.style.transform = `translate3d(${-pos}%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`;
-//     brands2.style.transform = `translate3d(${-pos}%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`;
-// }, 10); 
+// let brandsLoop = setInterval(function () {
+//     pos += 0.3;
+//     if (pos >= 100) pos = 0;
+//     brands.style.transform = `translate3d(${-pos}%, 0px, 0px)`;
+//     brands2.style.transform = `translate3d(${-pos}%, 0px, 0px)`;
+// }, 33);
+
 
 function validateEmail(email) {
     var pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -82,8 +83,8 @@ function stepClick(isNext) {
         step0Blocks.style.display = 'block';
     } else if (button1) {
         button1.disabled = false;
-        if(step0Blocks) {
-        step0Blocks.style.display = 'none';
+        if (step0Blocks) {
+            step0Blocks.style.display = 'none';
         }
     }
 
@@ -125,18 +126,18 @@ function stepClick(isNext) {
 
     //Send & show info
     if (isNext && formState.isSending) {
-    fullSection.innerHTML = `
+        fullSection.innerHTML = `
         <div class="mainname_text error__quiz">
             <div>Sending...</div>
         </div>
     `;
 
-    console.log('try to send');
+        console.log('try to send');
 
-    //imitation of request, change to async
-    setTimeout(function(){
-        if (!"Api responce 200-299") {
-            fullSection.innerHTML = `
+        //imitation of request, change to async
+        setTimeout(function () {
+            if (!"Api responce 200-299") {
+                fullSection.innerHTML = `
             <div class="mainname_text">
                 <div class="jtext_line">
                     <div class="lottie-anim lottie-anim__yell"><lottie-player src="img/svg_json/7.json" background="transparent" speed="1" loop autoplay></lottie-player></div>
@@ -147,15 +148,15 @@ function stepClick(isNext) {
                 </div>
             </div>
             `;
-        } else {
-            fullSection.innerHTML = `
+            } else {
+                fullSection.innerHTML = `
                 <div class="mainname_text error__quiz">
                     <div class="jtext_line">Some error occurred.</div>
                     <button class="quiz_btn quiz_btn__1 btn" id="quiz_btn2" onclick="stepClick(true);">Try again</button>
                 </div>
             `;
-        }
-    }, 500);
+            }
+        }, 500);
 
     }
 
@@ -167,41 +168,25 @@ var typedHero = new Typed('.header_anim01_bl', {
     typeSpeed: 80,
     startDelay: 10,
     onComplete: (self) => {
+        document.querySelector('.head_sect1').classList.add('typed-header-hero');
         // alert('complete');
-    },
-  });
+    }
+});
 
 //Desktop quiz form typing
-
 var typedQuiz = new Typed('#quiz_typo', {
     strings: ['Hi !^40', 'What is your name?'],
-    typeSpeed: 90,
+    typeSpeed: 80,
     backDelay: 1700,
     backSpeed: 30,
     loop: true,
-    
-  });
-  
-  
- 
 
+});
 
-
-
-
-// //add smooth scrolling when clicking any anchor link
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-//             behavior: 'smooth'
-//         });
-//     });
-// });
 
 
 //smooth scroll iOS Safari
-(function() {
+(function () {
     scrollTo();
 })();
 
@@ -218,7 +203,7 @@ function scrollAnchors(e, respond = null) {
     if (!targetAnchor) return;
     const originalTop = distanceToTop(targetAnchor);
     window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-    const checkIfDone = setInterval(function() {
+    const checkIfDone = setInterval(function () {
         const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
         if (distanceToTop(targetAnchor) === 0 || atBottom) {
             targetAnchor.tabIndex = '-1';
@@ -226,5 +211,5 @@ function scrollAnchors(e, respond = null) {
             window.history.pushState('', '', targetID);
             clearInterval(checkIfDone);
         }
-    }, 1500);
+    }, 2000);
 }

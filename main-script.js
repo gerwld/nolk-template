@@ -1,4 +1,4 @@
-window.addEventListener('scroll', mobOffsetAnimation, false);
+window.addEventListener('scroll', scrollOffset, false);
 
 
 function toggleClass(elem, className, isFixed, isMenu) {
@@ -23,8 +23,8 @@ function toggleMob(elem) {
     block.style = `z-index: ${zindMob};`;
 }
 
-// Desktop mob-block animation
-function mobOffsetAnimation() {
+function scrollOffset() {
+    // Desktop mob-block animation
     let mobBlocks = document.querySelector('.mob_blocks_desc');
     let allMobBlocks = document.querySelectorAll('.mob_click');
     let mobOffset = mobBlocks.getBoundingClientRect();
@@ -44,9 +44,18 @@ function mobOffsetAnimation() {
         });
     }
 
-}
 
-// allMobBlocks.forEach(function (mob) {
-    //     mob.classList.remove('action');
-    //     console.log('true');
-    // });
+    //Float footer change (hide artefacts when scroll on low-end device)
+    let bodyHeight = document.getElementById('body').clientHeight;
+    let footerDp = document.querySelector('.main_footer_dp');
+    let displayHeight = Math.max(document.documentElement.clientHeight, window.screen.height);
+    let displayWidth = Math.max(document.documentElement.clientWidth, window.screen.width);
+    let showBgPos = bodyHeight - (displayHeight * 2);
+    if(footerDp){
+        if(window.scrollY < showBgPos && displayWidth > 990) {
+            footerDp.style = "background-color:#fff";
+        } else {
+            footerDp.style = "background-color:#002B9A";
+        }
+    }
+}
