@@ -1178,15 +1178,6 @@ a.btn {
         border-radius: 0% 0% 20vw 0%;
     }
 
-    /* .mob_click__2 {
-        transition: border-radius 0.4s cubic-bezier(0.38, 0.11, 0.42, 1) 1.2s;
-        
-    }
-
-    .mob_click__3 {
-        transition: border-radius 0.4s cubic-bezier(0.38, 0.11, 0.42, 1) 0.75s;
-    } */
-
     .mob_click__1.action {
         border-radius: 0% 20vw 0% 0%;
     }
@@ -1198,6 +1189,15 @@ a.btn {
     .mob_click__3.action {
         border-radius: 0% 0% 0% 20vw;
     }
+
+    .mob_img__4 {
+        border-radius: 14vw;
+    }
+
+    .mob_img__4:hover {
+        border-radius: 14vw 0 14vw 0;
+    }
+
 
 
 }
