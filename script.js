@@ -48,7 +48,7 @@ textarea.onkeyup = function () {
 
 function stepClick(isNext) {
     let textBlock = document.getElementById('mainname_text-title');
-    let step0Blocs = document.querySelector('.step0_block');
+    let step0Blocks = document.querySelector('.step0_block');
     let fullSection = document.querySelector('.main_name_content');
 
     //save data after click (back/forw)
@@ -79,14 +79,17 @@ function stepClick(isNext) {
     //disable if step 0
     if (formState.step === 0) {
         button1.disabled = true;
-        step0Blocs.style.display = 'block';
+        step0Blocks.style.display = 'block';
     } else if (button1) {
         button1.disabled = false;
-        step0Blocs.style.display = 'none';
+        if(step0Blocks) {
+        step0Blocks.style.display = 'none';
+        }
     }
 
     let isReversed = (formState.step === 1) ? "reversed" : 0;
     let isSmileShow = formState.step < 2;
+    let nameSubtext = formState.step === 1 ? `<div class="sub_name">, ${formState.userData[0]}</div>` : '';
 
     if (!formState.isSending) {
         // Title change
@@ -94,7 +97,7 @@ function stepClick(isNext) {
         <div class="${`step_${formState.step}_added`}">
             <div class="jtext_line ${isReversed}">
                 ${isSmileShow ? '<div class="lottie-anim lottie-anim__yell"><lottie-player src="img/svg_json/7.json" background="transparent" speed="1" loop autoplay></lottie-player></div>' : ''}
-                <div class="quiz_text">${formState.title[formState.step][0]}</div>
+                <div class="quiz_text">${formState.title[formState.step][0]}${nameSubtext}</div>
             </div>
             <div class="jtext_line quiz_text">${formState.title[formState.step][1]}</div>
         </div>
@@ -105,7 +108,7 @@ function stepClick(isNext) {
 
         //Change height if 1
         if (formState.step == 1) {
-            textarea.style.cssText += 'white-space:unset;height:3.5em;';
+            textarea.style.cssText += 'white-space:unset;height:2.2em;';
             textarea.rows = 3;
         } else {
             textarea.style.cssText = '';

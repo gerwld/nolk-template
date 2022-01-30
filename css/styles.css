@@ -324,9 +324,9 @@ a.btn {
     font-size: 9vw;
 }
 
-.mainname_text .jtext_line:nth-child(1) .quiz_text {
+.step_1_added  .quiz_text {
     margin-right: 7px;
-} 
+}
 
 .mainname_quiz textarea {
     padding: 0;
@@ -856,7 +856,8 @@ a.btn {
     }
 
     .sect2_text__mobile-landscape,
-    .sect2_text__desktop {
+    .sect2_text__desktop,
+    .sub_name {
         display: none;
     }
 
@@ -995,6 +996,10 @@ a.btn {
 
     .mob_click {
         padding: 20px;
+    }
+
+    .sub_name {
+        display: inline;
     }
 
 }
@@ -1286,7 +1291,7 @@ a.btn {
     /* Quiz */
 
     .quiz_text {
-        margin-right: 0!important;
+        margin-right: 0;
     }
 
     .main_name {
@@ -1307,5 +1312,21 @@ a.btn {
         display: block;
     }
 
+    .main_name_content {
+        margin-top: 12.5vw;
+        margin-bottom: 4vw;
+    }
+
+    .quiz_btn {
+        padding: 0.3em 2em;
+    }
+
+    .main_name {
+        padding-bottom: 16vw;
+    }
+
+    .mainname_quiz textarea {
+        margin: 2vw 0;
+    }
 
 }
