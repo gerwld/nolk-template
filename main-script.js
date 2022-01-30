@@ -58,4 +58,12 @@ function scrollOffset() {
             footerDp.style = "background-color:#002B9A";
         }
     }
+
+    let sect2TextBounc = document.querySelector('.sect2_text__desktop');
+
+    if(sect2TextBounc.getBoundingClientRect().top < 200) {
+        sect2TextBounc.classList.add('sect2_link_active');
+    }
+
+    
 }

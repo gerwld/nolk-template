@@ -1052,12 +1052,12 @@ a.btn {
     }
 
     /* Svg typo header animation */
-    .header_anim01 .lottie-anim {
+    .header_anim01 .bounce_load {
         visibility: hidden;
         transition: 1s;
     }
 
-    .typed-header-hero .lottie-anim {
+    .typed-header-hero .bounce_load {
         visibility: visible;
         animation: headanim1 0.5s ease 1;
     }
@@ -1068,8 +1068,10 @@ a.btn {
             transform: translateY(20px);
         }
         50% {
+            transform: translateY(-10px);
+        }
+        80% {
             opacity: 1;
-            transform: translateY(-7px);
         }
         100% {
             transform: translateY(0px);
@@ -1099,7 +1101,8 @@ a.btn {
         position: relative;
     }
 
-    .htext_desktop .link::after {
+    .htext_desktop .link::after,
+    .sect2_textblock .link::after {
         content: "";
         position: absolute;
         display: inline-block;
@@ -1108,9 +1111,10 @@ a.btn {
         bottom: 0;
         left: 0;
         background-color: #FF505D;
-        transition: width 1s cubic-bezier(0.48, 0.04, 0.17, 1.03) 0.7s;
+        transition: width 1s cubic-bezier(0.48, 0.04, 0.17, 1.03) 1s;
     }
 
+    .sect2_link_active .link::after,
     .typed-header-hero .htext_desktop .link::after {
         width: 100%;
     }
@@ -1343,7 +1347,11 @@ a.btn {
 
     .main_footer a,
     .footer_nav li a {
-        font-size: 2.5vw;
+        font-size: 2.2vw;
+    }
+    .footer_nav li a {
+        padding: 0.3vw 0px;
+        margin-top: 5px;
     }
 
     .desktop_sect1 {
@@ -1352,7 +1360,7 @@ a.btn {
     }
 
     .footer_nav {
-        width: 78%;
+        width: 75%;
     }
 
     .desktop_sect1,
@@ -1395,7 +1403,7 @@ a.btn {
    }
 
    .main_footer a, .footer_nav li a {
-       font-size: 2.1vw;
+       font-size: 2vw;
    }
 
    .footer_nav {
@@ -1480,6 +1488,34 @@ a.btn {
         height: auto;
         transform: translateY(2vw);
         margin-left: 5px;
+    }
+
+    .sect1_btn {
+        font-size: 1.5vw;
+        padding: 0.55em 1.55em;
+    }
+
+    .sect1_btn:first-child {
+        margin-right: 2vw;
+    }
+
+    .main_btn {
+        width: 3vw;
+        height: 1vw;
+    }
+
+    .nb1__open .main_btn::before {
+        transform: translateY(0.5vw) rotate(45deg);
+    }
+    
+    .nb1__open .main_btn::after {
+        transform: translateY(-0.5vw) rotate(-45deg);
+    }
+
+    .sect2_textblock .link {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
     }
 
 }
