@@ -1319,6 +1319,7 @@ a.btn {
 
     .quiz_btn {
         padding: 0.3em 2em;
+        font-size: 2vw;
     }
 
     .main_name {
@@ -1327,6 +1328,14 @@ a.btn {
 
     .mainname_quiz textarea {
         margin: 2vw 0;
+    }
+
+    .mainname_text.error__quiz {
+        padding: 3vw 0;
+    }
+
+    .error__quiz .quiz_btn {
+        margin-top: 4vw;
     }
 
 }
