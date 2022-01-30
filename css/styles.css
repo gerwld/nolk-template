@@ -101,7 +101,7 @@ a.btn {
     font-size: 0!important;
     line-height: 0;
     background: none;
-    z-index: 10005;
+    z-index: 100005;
 }
 
 .main_btn::before,
@@ -159,12 +159,32 @@ a.btn {
     top: 0;
     right: -100%;
     overflow: hidden;
-    transition: 0.3s;
-    z-index: 10001;
+    opacity: 0.7;
+    transition: 0.6s cubic-bezier(0.22, 0.08, 0.24, 1) 0.08s;
+    transition-property: opacity, right;
+    z-index: 100001;
+}
+
+.background-nav {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s cubic-bezier(0.22, 0.08, 0.24, 1) 0.40s, right 0s ease 0.5s;
 }
 
 .nb1__open .main_nav_block {
     right: 0;
+    opacity: 1;
+}
+
+.nb1__open .background-nav {
+    right: 0;
+    opacity: 1;
 }
 
 .nb1__open .main_btn::before,
@@ -951,6 +971,10 @@ a.btn {
 
     .main_btn {
         width: 35px;
+    }
+
+    .main_nav_block {
+        width: 80%;
     }
 
     .htext_mobile {
