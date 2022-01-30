@@ -158,7 +158,7 @@ a.btn {
     transition: margin 0.25s cubic-bezier(0.48, 0.04, 0.17, 1.03);
 }
 
-.footer_nav li {
+.footer_nav li:not(.linkedin) {
     width: 90%;
 }
 
@@ -174,12 +174,12 @@ a.btn {
     background-color: #ffffff;
     transition: width 0.25s cubic-bezier(0.48, 0.04, 0.17, 1.03);
 }
-.footer_nav li a:hover::after,
+.footer_nav li:not(.linkedin) a:hover::after,
 .main_nav li:not(.linkedin) a:hover::after {
     width: 100%;
 }
 
-.footer_nav li a:hover,
+.footer_nav li:not(.linkedin) a:hover,
 .main_nav li:not(.linkedin) a:hover {
     margin-left: 0.3em;
 }
@@ -204,7 +204,7 @@ a.btn {
 }
 
 .background-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     right: -100%;
