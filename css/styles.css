@@ -1274,14 +1274,14 @@ a.btn {
     }
 
     .rounded-section {
-        border-bottom-left-radius: 15vw;
-        border-bottom-right-radius: 15vw;
-        margin-bottom: -15.5vw;
+        border-bottom-left-radius: 16vw;
+        border-bottom-right-radius: 16vw;
+        margin-bottom: -16.5vw;
     }
 
     .sect2_brands {
         margin-top: 1.4em;
-        margin-bottom: 1.6em;
+        margin-bottom: 2.6em;
     }
 
     .lottie-anim__2 {
@@ -1338,4 +1338,53 @@ a.btn {
         margin-top: 4vw;
     }
 
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main_footer {
+        padding-top: 22vw;
+        padding-bottom: 35px;
+    }
+
+    .main_footer a,
+    .footer_nav li a {
+        font-size: 2.7vw;
+    }
+
+    .desktop_sect1 {
+        width: 90%;
+        padding-bottom: 13.5em;
+    }
+
+    .footer_nav {
+        width: 78%;
+    }
+
+    .desktop_sect1,
+    .footer_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+    .site_logo {
+        margin-top: 7px;
+    }
+
+    .footer_nav .sec {
+        position: absolute;
+        left: 3.5vw;
+        bottom: 0;
+    }
+
+    /* .footer_nav .sec  {
+        right: 3.5vw;
+    } */
+
+    .btn_back {
+        padding-right: 33px;
+        background-size: 26px 26px;
+    }
 }
