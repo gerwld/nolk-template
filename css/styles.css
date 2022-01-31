@@ -333,6 +333,11 @@ a.btn {
     transform: scale(1.05);
 }
 
+.sect1_btn:active {
+    transform: scale(1.02);
+    transition: 0.05s ease;
+}
+
 .sect1_btn .bg {
     position: absolute;
     width: 105%;
