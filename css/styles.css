@@ -102,6 +102,12 @@ a.btn {
     line-height: 0;
     background: none;
     z-index: 100005;
+    user-select: none;
+    outline: none;
+}
+
+.main_btn:focus {
+    outline: none!important;
 }
 
 .main_btn::before,
@@ -290,13 +296,17 @@ a.btn {
 /* Header button styles & anim */
 
 .more_buttons {
-    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1.2em;
 }
 
 .sect1_btn {
     position: relative;
     color: #fff;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease;
     border: 1px solid #002b99;
     border-radius: 50px;
     overflow: hidden;
@@ -307,7 +317,7 @@ a.btn {
     z-index: 100;
     position: relative;
     display: block;
-    padding: 0.5em 1.25em;
+    padding: 0.55em 1.45em;
 }
 
 .sect1_btn__2 {
@@ -969,6 +979,9 @@ a.btn {
     }
     .mob_click__1 {
         z-index: 10000!important;
+    }
+    .sect1_btn {
+        margin: 10px 10px 0 0;
     }
 
 }
