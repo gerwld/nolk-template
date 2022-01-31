@@ -287,28 +287,57 @@ a.btn {
     line-height: 1.1em;
 }
 
+/* Header button styles & anim */
+
 .more_buttons {
     margin-top: 2em;
 }
 
 .sect1_btn {
-    padding: 0.5em 1.25em;
-    margin: 15px 15px 0 0;
-    background-color: #002b99;
-    border-radius: 50px;
+    position: relative;
     color: #fff;
-    transition: 0.2s ease-in-out;
+    transition: 0.4s ease-in-out;
+    border: 1px solid #002b99;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: #002b99;
+}
+
+.sect1_btn .more_btn_anim {
+    z-index: 100;
+    position: relative;
+    display: block;
+    padding: 0.5em 1.25em;
 }
 
 .sect1_btn__2 {
+    background-color: #fff;
+}
+
+.sect1_btn__2 .more_btn_anim {
     background-color: transparent;
-    border: 1px solid #002b99;
     color: #002b99;
 }
 
 .sect1_btn:hover {
     transform: scale(1.05);
 }
+
+.sect1_btn .bg {
+    position: absolute;
+    width: 105%;
+    height: 300%;
+    background-color: rgb(255, 255, 255);
+    left: -2%;
+    bottom: -300%;
+    border-radius: 100%;
+    transition: bottom 0.42s cubic-bezier(0.28, 0.11, 0.32, 1) 0s;
+}
+
+.sect1_btn .bg__2 {
+    background-color: #002b99;
+}
+
 
 /* Header text visuals */
 
@@ -911,6 +940,9 @@ a.btn {
 
 
 
+
+
+
 /* Mobile */
 @media only screen and (max-width: 479px) {
     .htext_mobile_portrait {
@@ -1201,6 +1233,7 @@ a.btn {
         font-size: inherit;
         color: transparent!important;
         line-height: inherit;
+        user-select: none;
     }
 
     .main_name .typed-cursor {
@@ -1489,11 +1522,11 @@ a.btn {
 
     .site_logo,
     ul.footer_navblock01  {
-        margin-right: 10%;
+        margin-right: 12%;
     }
 
     .footer_nav ul {
-        flex: 0 0 335px;
+        flex: 0 0 25vw;
     }
 
     .footer_nav {
@@ -1501,8 +1534,6 @@ a.btn {
     }
 
     
-
-
     .site_logo {
         margin-top: 7px;
     }
@@ -1547,7 +1578,7 @@ a.btn {
     }
 
     .footer_nav .footer_navblock01 {
-        margin-right: 10vw;
+        margin-right: 5vw;
     }
 
     .linkedin {
@@ -1606,7 +1637,7 @@ a.btn {
 
     .desktop_sect1 {
         height: 60vh;
-        max-height: 520px;
+        max-height: 850px;
         min-height: 180px;
         padding-bottom: 0;
     }
@@ -1626,9 +1657,13 @@ a.btn {
         margin-left: 5px;
     }
 
-    .sect1_btn {
+    .sect1_btn .more_btn_anim {
         font-size: 1.5vw;
         padding: 0.55em 1.55em;
+    }
+
+    .more_btn_anim {
+
     }
 
     .sect1_btn:first-child {

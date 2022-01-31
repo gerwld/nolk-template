@@ -16,6 +16,39 @@ function validateEmail(email) {
     return pattern.test(email);
 }
 
+// Header button animation
+function animateButton(btn, bg, textBlock, isBlue){
+    let text = document.querySelector('.' + textBlock);
+    function changeButton(bg, isMouseOver) {
+        let background = document.getElementById(bg);
+        if(isMouseOver) {
+            background.style.opacity = "1";
+            background.style.bottom = "-100%";
+            } else {
+            background.style.bottom = "100%";
+            setTimeout(function(){
+                background.style.bottom = "-300%";
+                background.style.opacity = "0";
+            }, 250)
+        }
+    }
+
+    document.getElementById(btn).addEventListener("mouseover", function(e){
+        changeButton(bg, true);
+        text.style.color = `${isBlue ? "#002b99" : "#ffffff"}`;
+
+    });
+
+    document.getElementById(btn).addEventListener("mouseleave", function(e){
+        changeButton(bg);
+        text.style.color = `${isBlue ? "#ffffff" : "#002b99"}`;
+    });
+
+}
+
+animateButton('more_btn_01', 'bg_mainbtn_1', 'more_btn_01_text', true);
+animateButton('more_btn_02', 'bg_mainbtn_2', 'more_btn_02_text', false);
+
 
 // Contact form
 let textarea = document.getElementById('quiz1');
