@@ -55,6 +55,12 @@ lottie-player {
     z-index: 10000000;
 }
 
+@media only screen and (min-width: 768px) {
+    .no_script {
+        font-size: 2vw;
+    }
+}
+
 .visually_hidden {
     position: absolute;
     visibility: hidden;
