@@ -39,6 +39,22 @@ lottie-player {
     overflow: hidden;
 }
 
+.no_script {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 135%;
+    background-color: #f4f3f3;
+    top: 0;
+    left: 0;
+    z-index: 10000000;
+}
+
 .visually_hidden {
     position: absolute;
     visibility: hidden;
