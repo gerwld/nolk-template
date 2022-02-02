@@ -16,7 +16,7 @@ function toggleClass(elem, className, isFixed, isMenu) {
 
 function removeClass(elem, className, isFixed) {
     document.querySelector('.' + elem).classList.remove(className);
-    if(isFixed) {
+    if (isFixed) {
         document.getElementById("body").classList.toggle("no-scroll");
     }
 }
@@ -51,11 +51,11 @@ function scrollOffset() {
         });
     }
 
-      //Desktop sect-2 link animation
-      let sect2TextBounc = document.querySelector('.sect2_text__desktop');
-      if(sect2TextBounc.getBoundingClientRect().top < 300) {
-          sect2TextBounc.classList.add('sect2_link_active');
-      } 
+    //Desktop sect-2 link animation
+    let sect2TextBounc = document.querySelector('.sect2_text__desktop');
+    if (sect2TextBounc.getBoundingClientRect().top < 300) {
+        sect2TextBounc.classList.add('sect2_link_active');
+    }
 
 
     //Float footer change (hide artefacts when scroll on low-end device)
@@ -64,12 +64,12 @@ function scrollOffset() {
     let displayHeight = Math.max(document.documentElement.clientHeight, window.screen.height);
     let displayWidth = Math.max(document.documentElement.clientWidth, window.screen.width);
     let showBgPos = bodyHeight - (displayHeight * 2);
-    if(footerDp){
-        if(window.scrollY < showBgPos && displayWidth > 990) {
+    if (footerDp) {
+        if (window.scrollY < showBgPos && displayWidth > 990) {
             footerDp.style = "background-color:#fff";
         } else {
             footerDp.style = "background-color:#002B9A";
         }
     }
-    
+
 }

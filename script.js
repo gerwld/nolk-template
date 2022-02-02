@@ -23,37 +23,37 @@ const primColor = "#ffffff";
 
 //map buttons
 allButtons.forEach(function (btn) {
-  const background = btn.querySelector(".bg");
-  const text = btn.querySelector(".btn_text");
+    const background = btn.querySelector(".bg");
+    const text = btn.querySelector(".btn_text");
 
-  //set contrast
-  var isContrast = false;
-  if (btn.classList.contains("contrast")) {
-    isContrast = true;
-  }
+    //set contrast
+    var isContrast = false;
+    if (btn.classList.contains("contrast")) {
+        isContrast = true;
+    }
 
-  btn.addEventListener("mouseover", function () {
-    changeBg(background, true);
-    text.style.color = `${isContrast ? baseColor : primColor}`;
-  });
+    btn.addEventListener("mouseover", function () {
+        changeBg(background, true);
+        text.style.color = `${isContrast ? baseColor : primColor}`;
+    });
 
-  btn.addEventListener("mouseleave", function () {
-    changeBg(background);
-    text.style.color = `${isContrast ? primColor : baseColor}`;
-  });
+    btn.addEventListener("mouseleave", function () {
+        changeBg(background);
+        text.style.color = `${isContrast ? primColor : baseColor}`;
+    });
 });
 
 function changeBg(elem, isMouseOver) {
-  if (isMouseOver) {
-    elem.style.opacity = "1";
-    elem.style.bottom = "-100%";
-  } else {
-    elem.style.bottom = "100%";
-    setTimeout(function () {
-      elem.style.bottom = "-300%";
-      elem.style.opacity = "0";
-    }, 250);
-  }
+    if (isMouseOver) {
+        elem.style.opacity = "1";
+        elem.style.bottom = "-100%";
+    } else {
+        elem.style.bottom = "100%";
+        setTimeout(function () {
+            elem.style.bottom = "-300%";
+            elem.style.opacity = "0";
+        }, 250);
+    }
 }
 
 
