@@ -17,37 +17,44 @@ function validateEmail(email) {
 }
 
 // Header button animation
-function animateButton(btn, bg, textBlock, isBlue){
-    let text = document.querySelector('.' + textBlock);
-    function changeButton(bg, isMouseOver) {
-        let background = document.getElementById(bg);
-        if(isMouseOver) {
-            background.style.opacity = "1";
-            background.style.bottom = "-100%";
-            } else {
-            background.style.bottom = "100%";
-            setTimeout(function(){
-                background.style.bottom = "-300%";
-                background.style.opacity = "0";
-            }, 250)
-        }
-    }
+const allButtons = document.querySelectorAll(".sect1_btn");
+const baseColor = "#002b99";
+const primColor = "#ffffff";
 
-    document.getElementById(btn).addEventListener("mouseover", function(e){
-        changeButton(bg, true);
-        text.style.color = `${isBlue ? "#002b99" : "#ffffff"}`;
+//map buttons
+allButtons.forEach(function (btn) {
+  const background = btn.querySelector(".bg");
+  const text = btn.querySelector(".btn_text");
 
-    });
+  //set contrast
+  var isContrast = false;
+  if (btn.classList.contains("contrast")) {
+    isContrast = true;
+  }
 
-    document.getElementById(btn).addEventListener("mouseleave", function(e){
-        changeButton(bg);
-        text.style.color = `${isBlue ? "#ffffff" : "#002b99"}`;
-    });
+  btn.addEventListener("mouseover", function () {
+    changeBg(background, true);
+    text.style.color = `${isContrast ? baseColor : primColor}`;
+  });
 
+  btn.addEventListener("mouseleave", function () {
+    changeBg(background);
+    text.style.color = `${isContrast ? primColor : baseColor}`;
+  });
+});
+
+function changeBg(elem, isMouseOver) {
+  if (isMouseOver) {
+    elem.style.opacity = "1";
+    elem.style.bottom = "-100%";
+  } else {
+    elem.style.bottom = "100%";
+    setTimeout(function () {
+      elem.style.bottom = "-300%";
+      elem.style.opacity = "0";
+    }, 250);
+  }
 }
-
-animateButton('more_btn_01', 'bg_mainbtn_1', 'more_btn_01_text', true);
-animateButton('more_btn_02', 'bg_mainbtn_2', 'more_btn_02_text', false);
 
 
 // Contact form
