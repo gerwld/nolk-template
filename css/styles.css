@@ -112,6 +112,11 @@ a.btn {
 	user-select: none;
 	outline: none;
 }
+
+.mainbtn_wrapper {
+	z-index: 100005;
+}
+
 .main_btn:focus {
 	outline: none!important;
 }
