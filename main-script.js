@@ -63,12 +63,12 @@ function scrollOffset() {
     let footerDp = document.querySelector('.main_footer_dp');
     let displayHeight = Math.max(document.documentElement.clientHeight, window.screen.height);
     let displayWidth = Math.max(document.documentElement.clientWidth, window.screen.width);
-    let showBgPos = bodyHeight - (displayHeight * 2);
+    let showBgPos = bodyHeight - (displayHeight * 1.5);
     if (footerDp) {
         if (window.scrollY < showBgPos && displayWidth > 990) {
-            footerDp.style = "background-color:#fff";
+            footerDp.style = "opacity: 0; display: none";
         } else {
-            footerDp.style = "background-color:#002B9A";
+            footerDp.style = "opacity: 1;  display: flex";
         }
     }
 

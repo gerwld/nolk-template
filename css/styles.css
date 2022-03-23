@@ -112,6 +112,11 @@ a.btn {
 	user-select: none;
 	outline: none;
 }
+
+.mainbtn_wrapper {
+	z-index: 100005;
+}
+
 .main_btn:focus {
 	outline: none!important;
 }
@@ -136,6 +141,7 @@ a.btn {
 	position: absolute;
 	top: 0;
 	right: 0;
+	min-height: 45px;
 	transition: top 0.3s ease;
 }
 .mainbtn_wrapper.closed {
@@ -192,7 +198,7 @@ a.btn {
 	z-index: 100;
 	width: 100%;
 	height: 100vh;
-	min-height: 300px;
+	/* min-height: 300px; */
 	top: 0;
 	right: -100%;
 	overflow: hidden;
@@ -219,6 +225,7 @@ a.btn {
 .nb1__open .main_nav_block {
 	right: 0;
 	opacity: 1;
+	overflow-y: scroll;
 }
 .nb1__open .background-nav {
 	right: 0;
@@ -1026,12 +1033,12 @@ a.btn {
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		border-radius: 12vw 0 0 12vw;
+		border-radius: 20vh 0 0 20vh;
 	}
 	.main_nav {
-		padding: 0;
-		padding-left: 8vw;
-		height: auto;
+		padding: 20px 0 0 8vw;
+    height: auto;
+    max-height: 100vh;
 	}
 	.main_nav ul:nth-child(2) {
 		margin-top: 10vw;
@@ -1381,7 +1388,7 @@ a.btn {
 	.mob_blocks,
 	.main_header {
 		z-index: 10;
-		position: relative;
+		/* position: relative; */
 	}
 	.mob_blocks,
 	.main_content,
