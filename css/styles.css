@@ -444,6 +444,12 @@ a.btn {
 	position: relative;
 	padding-top: 110px;
 }
+
+.main_footer {
+	opacity: 1;
+	display: flex;
+}
+
 .main_name {
 	z-index: 1;
 	padding-top: 140px;
@@ -1345,6 +1351,7 @@ a.btn {
 		justify-content: space-between;
 		min-height: 100vh;
 	}
+
 	.main_footer a,
 	.footer_nav li a {
 		font-size: 2vw;
@@ -1379,7 +1386,9 @@ a.btn {
 	}
 	/* Floating menu */
 	.main_footer {
-		display: flex;
+		opacity: 0;
+    display: none;
+
 		flex-direction: column;
 		justify-content: flex-end;
 		width: 100%;
