@@ -277,53 +277,63 @@ a.btn {
 /* Header button styles & anim */
 
 .more_buttons {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	margin-top: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1.2em;
 }
+
 .sect1_btn {
-	position: relative;
-	color: #fff;
-	transition: 0.4s ease;
-	border: 1px solid #002b99;
-	border-radius: 50px;
-	overflow: hidden;
-	background-color: #002b99;
+  position: relative;
+  color: #fff;
+  transition: 0.4s ease;
+  border: 1px solid #002b99;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #002b99;
 }
+
 .sect1_btn .btn_text {
-	z-index: 100;
-	position: relative;
-	display: block;
-	padding: 0.56em 1.46em;
+  z-index: 100;
+  position: relative;
+  display: block;
+  padding: 0.66em 1.66em;
+  transition: color 0.3s ease;
 }
+
 .sect1_btn__2 {
-	background-color: transparent;
+  background-color: transparent;
+  margin-top: 1em;
 }
+
 .sect1_btn__2 .btn_text {
-	background-color: transparent;
-	color: #002b99;
+  background-color: transparent;
+  color: #002b99;
 }
+
 .sect1_btn:hover {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
+
 .sect1_btn:active {
-	transform: scale(1.02);
-	transition: 0.05s ease;
+  transform: scale(1.02);
+  transition: 0.05s ease;
 }
+
 .sect1_btn .bg {
-	position: absolute;
-	width: 105%;
-	height: 300%;
-	background-color: rgb(255, 255, 255);
-	left: -2%;
-	bottom: -300%;
-	border-radius: 100%;
-	transition: bottom 0.42s cubic-bezier(0.28, 0.11, 0.32, 1) 0s;
+  position: absolute;
+  width: 105%;
+  height: 300%;
+  background-color: rgb(255, 255, 255);
+  left: -2%;
+  bottom: -300%;
+  border-radius: 100%;
+  transition: bottom 0.42s cubic-bezier(0.28, 0.11, 0.32, 1) 0s;
 }
+
 .sect1_btn .bg__2 {
-	background-color: #002b99;
+  background-color: #002b99;
 }
 /* Header text visuals */
 
