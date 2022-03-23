@@ -1357,6 +1357,10 @@ a.btn {
 		min-height: 100vh;
 	}
 
+	.main_footer .content_wrapper {
+		width: auto;
+	}
+
 	.main_footer a,
 	.footer_nav li a {
 		font-size: 2vw;
