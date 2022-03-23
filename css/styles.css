@@ -810,12 +810,10 @@ a.btn {
 	width: min-content;
 	justify-content: flex-start;
 	flex-wrap: nowrap;
-	will-change: transform;
-}
+	/* will-change: transform; */
 
-.brands_block {
-	animation: brandsAnym 20s linear infinite;
-	-webkit-animation: brandsAnym 20s linear infinite;
+	animation: brandsAnym 20s steps(600) infinite;
+	-webkit-animation: brandsAnym 20s steps(600) infinite;
 	-moz-animation: brandsAnym 20s linear infinite;
 	-o-animation: brandsAnym 20s linear infinite;
 }
