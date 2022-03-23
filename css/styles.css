@@ -1076,12 +1076,19 @@ a.btn {
 		bottom: 0;
 		left: 0;
 		background-color: #FF505D;
-		transition: width 1s cubic-bezier(0.48, 0.04, 0.17, 1.03) 1s;
+		transition: width 1s cubic-bezier(0.48, 0.04, 0.17, 1.03) 1s,
+		height 0.16s cubic-bezier(0.48, 0.04, 0.17, 1.03);
 	}
 	.sect2_link_active .link::after,
 	.typed-header-hero .htext_desktop .link::after {
 		width: 100%;
 	}
+
+	.htext_desktop .link:hover::after,
+	.sect2_textblock .link:hover::after {
+		height: 10px;
+	}
+
 	.mob_blocks_desc {
 		position: relative;
 	}
