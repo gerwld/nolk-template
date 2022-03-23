@@ -143,6 +143,7 @@ a.btn {
 	right: 0;
 	min-height: 45px;
 	transition: top 0.3s ease;
+	cursor: pointer;
 }
 .mainbtn_wrapper.closed {
 	top: 0!important;
