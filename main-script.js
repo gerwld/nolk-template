@@ -1,6 +1,5 @@
 window.addEventListener('scroll', scrollOffset, false);
 
-
 function toggleClass(elem, className, isFixed, isMenu) {
     document.querySelector("." + elem).classList.toggle(className);
     if (isFixed) {
@@ -8,7 +7,7 @@ function toggleClass(elem, className, isFixed, isMenu) {
     }
     // menu button position fix
     if (isMenu) {
-        let btnMenu = document.querySelector(".mainbtn_wrapper")
+        let btnMenu = document.querySelector(".mainbtn_wrapper");
         btnMenu.style.top = `${window.scrollY}px`;
         btnMenu.classList.toggle("closed");
     }
@@ -18,6 +17,7 @@ function removeClass(elem, className, isFixed) {
     document.querySelector('.' + elem).classList.remove(className);
     if (isFixed) {
         document.getElementById("body").classList.toggle("no-scroll");
+        document.querySelector(".mainbtn_wrapper").classList.add("closed");
     }
 }
 
