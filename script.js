@@ -1,16 +1,3 @@
-// logo scroll, js realisation. Works same as css keyframes, sometimes more buggy
-// var brands = document.getElementById("brands_block1");
-// var brands2 = document.getElementById("brands_block2");
-
-// let pos = 0;
-// let brandsLoop = setInterval(function () {
-//     pos += 0.3;
-//     if (pos >= 100) pos = 0;
-//     brands.style.transform = `translate3d(${-pos}%, 0px, 0px)`;
-//     brands2.style.transform = `translate3d(${-pos}%, 0px, 0px)`;
-// }, 33);
-
-
 function validateEmail(email) {
     var pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return pattern.test(email);
@@ -23,37 +10,37 @@ const primColor = "#ffffff";
 
 //map buttons
 allButtons.forEach(function (btn) {
-    const background = btn.querySelector(".bg");
-    const text = btn.querySelector(".btn_text");
+  const background = btn.querySelector(".bg");
+  const text = btn.querySelector(".btn_text");
 
-    //set contrast
-    var isContrast = false;
-    if (btn.classList.contains("contrast")) {
-        isContrast = true;
-    }
+  //set contrast
+  var isContrast = false;
+  if (btn.classList.contains("contrast")) {
+    isContrast = true;
+  }
 
-    btn.addEventListener("mouseover", function () {
-        changeBg(background, true);
-        text.style.color = `${isContrast ? baseColor : primColor}`;
-    });
+  btn.addEventListener("mouseover", function () {
+    changeBg(background, true);
+    text.style.color = `${isContrast ? baseColor : primColor}`;
+  });
 
-    btn.addEventListener("mouseleave", function () {
-        changeBg(background);
-        text.style.color = `${isContrast ? primColor : baseColor}`;
-    });
+  btn.addEventListener("mouseleave", function () {
+    changeBg(background);
+    text.style.color = `${isContrast ? primColor : baseColor}`;
+  });
 });
 
 function changeBg(elem, isMouseOver) {
-    if (isMouseOver) {
-        elem.style.opacity = "1";
-        elem.style.bottom = "-100%";
-    } else {
-        elem.style.bottom = "100%";
-        setTimeout(function () {
-            elem.style.bottom = "-300%";
-            elem.style.opacity = "0";
-        }, 250);
-    }
+  if (isMouseOver) {
+    elem.style.opacity = "1";
+    elem.style.bottom = "-100%";
+  } else {
+    elem.style.bottom = "100%";
+    setTimeout(function () {
+      elem.style.bottom = "-300%";
+      elem.style.opacity = "0";
+    }, 250);
+  }
 }
 
 
