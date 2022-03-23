@@ -1095,7 +1095,7 @@ a.btn {
 
 	.htext_desktop .link:hover::after,
 	.sect2_textblock .link:hover::after {
-		height: 10px;
+		height: 6px;
 	}
 
 	.mob_blocks_desc {
