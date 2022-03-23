@@ -1388,7 +1388,7 @@ a.btn {
 	.mob_blocks,
 	.main_header {
 		z-index: 10;
-		position: relative;
+		/* position: relative; */
 	}
 	.mob_blocks,
 	.main_content,
