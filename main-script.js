@@ -30,16 +30,6 @@ function toggleMob(elem) {
     block.style = `z-index: ${zindMob};`;
 }
 
-var isInViewport = function (elem) {
-    var bounding = elem.getBoundingClientRect();
-    return (
-        bounding.top + 78 >= 0 &&
-        bounding.left >= 0 &&
-        bounding.bottom - 78 <= (window.innerHeight || document.documentElement.clientHeight) &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-};
-
 function scrollOffset() {
     // Desktop mob-block animation
     let mobBlocks = document.querySelector('.mob_blocks_desc');
@@ -67,17 +57,6 @@ function scrollOffset() {
         sect2TextBounc.classList.add('sect2_link_active');
     }
 
-    //Show animation block only in viewport 
-    const animblock = document.querySelector('.brands_block');
-    const sect2 = document.querySelector('.sect2_brands');
-    const isAnimVisible = isInViewport(sect2);
-    if(isAnimVisible) {
-        animblock.style = 'display: flex';
-
-    } else {
-        animblock.style = 'display: none';
-        console.log('hidden');
-    }
 
     //Float footer change (hide artefacts when scroll on low-end device)
     let bodyHeight = document.getElementById('body').clientHeight;
