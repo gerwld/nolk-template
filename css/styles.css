@@ -842,6 +842,7 @@ a.btn {
 }
 .main_footer .content_wrapper {
 	position: relative;
+	width: 100%;
 }
 .step_0_added {
 	display: none;
@@ -1012,6 +1013,11 @@ a.btn {
 	body {
 		min-width: 768px;
 	}
+
+	.big_title .link {
+		position: relative;
+	}
+
 	.main_nav_block {
 		max-width: 50%;
 		max-width: 50vw;
@@ -1088,6 +1094,7 @@ a.btn {
 	.main_name .typed-cursor {
 		border-left: 2px solid #ffffff;
 	}
+	.big_title .link,
 	.header_text .link {
 		text-decoration: none;
 		color: inherit;
