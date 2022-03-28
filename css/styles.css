@@ -143,6 +143,7 @@ a.btn {
 	right: 0;
 	min-height: 45px;
 	transition: top 0.3s ease;
+	cursor: pointer;
 }
 .mainbtn_wrapper.closed {
 	top: 0!important;
@@ -219,7 +220,7 @@ a.btn {
 	opacity: 0;
 	z-index: 100000;
 	background-color: rgba(0, 0, 0, 0.6);
-	transition: opacity 0.3s cubic-bezier(0.22, 0.08, 0.24, 1) 0.40s, right 0s ease 0.5s;
+	transition: opacity 0.25s cubic-bezier(0.22, 0.08, 0.24, 1) 0.40s, right 0s ease 0.5s;
 	cursor: pointer;
 }
 .nb1__open .main_nav_block {
@@ -1355,6 +1356,10 @@ a.btn {
 		flex-direction: column;
 		justify-content: space-between;
 		min-height: 100vh;
+	}
+
+	.main_footer .content_wrapper {
+		width: auto;
 	}
 
 	.main_footer a,
