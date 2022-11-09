@@ -1,6 +1,6 @@
-# Nolk-mobile-first
+# Nolk-template
 
-Link to the project: https://gerwld.github.io/Nolk-mobile-first/
+Link to the project: https://gerwld.github.io/Nolk-template/
 
 ![image](https://user-images.githubusercontent.com/47056812/152033563-cccf08c5-3e77-449d-b2a3-2b0b34a769b6.png)
 
