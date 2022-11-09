@@ -1,5 +1,4 @@
 # Nolk-mobile-first
-Another template, was created with the mobile-first principle. <br>
 
 Link to the project: https://gerwld.github.io/Nolk-mobile-first/
 
