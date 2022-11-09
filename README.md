@@ -1,6 +1,6 @@
 # Nolk-template
 
-Link to the project: https://gerwld.github.io/nolk-template/
+Project link: https://gerwld.github.io/nolk-template/
 
 ![image](https://user-images.githubusercontent.com/47056812/152033563-cccf08c5-3e77-449d-b2a3-2b0b34a769b6.png)
 
